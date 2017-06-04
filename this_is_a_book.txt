@@ -1,0 +1,1145 @@
+Programmer, de Débutant à Expert.
+Tome 1 - Débutant.
+
+A qui s'addresse cette série:
+
+Avant d'aller plus loin permettez moi de vous poser quelques questions
+pour vous aider à déterminer si cette série de livre est faite pour vous ou non.
+
+- Premièrement, voulez-vous vraiment apprendre à programmer?
+
+	Si vous pensez "Je veux créer des jeux vidéo, donc je dois apprendre à programmer.",
+	vous vous fourvoyez. Que ce soit dans la création de jeux vidéo, d'applications, de
+	sites web... chaque partie est relativement indépendante, vous pouvez participer
+	à l'aboutissement d'un logiciel par la direction artistique, le management,
+	par une réflexion ou une action quelquonque qui permet au projet de ce réaliser.
+	Pour apprendre à programmer vous devez vouloir programmer.
+
+- Deuxièmement, savez-vous vraiment ce qu'est la programmation?
+
+	Evidemment, vous ne le saurait vraiment qu'après un long
+	apprentissage, mais, ne commencez pas à apprendre sans en
+	avoir une petite idée. J'aime partager. Laissez moi partager
+	avec vous les impressions que j'ai accumulé au fil du temps
+	sur ce qu'est la programmation informatique.
+
+	La programmation est moins cryptique que vous pouvez penser.
+
+		Il est vrai que, si vous vous penchez, en l'état, sans aucune connaissance,
+		sur des fragments de code, vous n'arriverez pas à les dichiffrer.
+		Cependant, sachez, qu'après quelques dizaines d'heures d'apprentissage,
+		vous pourez parcourir et comprendre dans les grandes lignes la plupart
+		des fichiers de code qui composent un logiciel.
+		Un programme informatique est, à quelques détails près, de l'anglais
+		abbrégé.
+
+	La programmation n'est pas des maths.
+
+		Vous n'êtes pas bon en math, vous n'êtes pas bon en science, peut importe,
+		la programmation est une discipline à part qui ne découle
+		d'aucune autre.
+
+	La programmation est à la fois théorique et pratique.
+
+		Un programmeur doit aussi bien être capable d'accumuler
+		des connaissances sur des concepts que d'écrire des pages
+		et des pages de codes le plus vite possible.
+
+	La programmation c'est l'analyse.
+
+		Dans le procéssus de programmation l'étape d'analyse est cele
+		qui prècéde toute les autres.
+		Pour pouvoir coder un logiciel ou une de ses parties, il faut
+		savoir précisement ce qu'on veut accomplir, à une échelle proche de
+		la ligne de code. Il est infiniment plus facile de traduire une action, 
+		un rouage en une ligne de code, qu'un grand ensemble d'action ou un système
+		complet en des milliers de lignes de code d'un coup.
+		Changer un but de grande envergure, proche de la représentation humaine,
+		en un ensemble de but plus petits et proche de la
+		représentation informatique, c'est ça le travail d'analyse d'un programmeur.
+
+	La programmation c'est la recherche.
+
+		La très grande majorité des problèmes que vous aurrez
+		à résoudre en tant que programmeur ont déjà été résolu
+		par d'autres avant vous, l'éficacité d'un programmeur
+		ce mesure à sa capacité à trouver des informations
+		pertinantes dans des livres, sur internet ou en s'adressant
+		à ses compères.
+
+	La programmation c'est l'organisation.
+
+		Les logiciels de petite taille, comprenant
+		peu de fonctionnalité ou n'ayant pas à relever
+		un challenge technique peuvent se passer d'avoir
+		un code bien architecturé.
+		Dans la réalité peut de programmes ne rentrent pas dans
+		au moins une de ces catégories.
+		Un programmeur devra donc avoir une vision globale de
+		son projet et etre ordonné. Sans cela il sera ralenti
+		par le débordemment des différents travaux de son chantier
+		lors de l'accroissement du nombre de ligne de code
+		et de fichier qui composent son programme. 
+
+	La programmation c'est la réfléxion.
+
+		Mais moins qu'on pourrait le croire,
+		en pratique le pourcentage de temps de programmation passé
+		à chercher des solutions nouvelles à des situations
+		qui demandent une analyse logique (pareille à la
+		résolution d'un puzzle) est assé faible.
+		Cepandant, entrainer son esprit de déduction et
+		prendre le temps de réfléchir par soit même à chaque
+		casse-tête rencontré vous rendra meilleur, plus
+		rapide et vous armera pour surmontez de possibles
+		obstacles futurs, desquels vous n'auriez pas pu venir
+		à bout autrement.
+
+	La programmation est plus subjective que vous pouvez penser.
+
+		En programmation peut de concepts et de façon
+		de faire sont immuables, seules quelques bases
+		logerons dans vos bagages technique pour toujours.
+		Au contact d'autres programmeurs (moi y compris) vous 
+		recevrez des conseils, voire des affirmations sur 
+		ce qu'il faut ou ne faut pas faire, ne les prenez pas
+		trop au sérieux, attendez toujours de chaque technique
+		qu'elle fasse ses preuves lorsque vous les utilisez dans
+		une situation réelle. Un programmeur ne doit pas
+		absorber bettement tout ce qu'il lit ou entends, il doit
+		être capable de remettre sont travail et celui des autres
+		en question perpétuellement.
+
+- Troisièmement, mon enseignement est-il celui dont vous avez besoin?
+
+	Pour le savoir je vais vous expliquer la pédagogie utilisé dans cette
+	série de livre et les buts qu'elle peut vous aider à atteindre.
+	Mais avant tout, laissez moi vous rappeler quelque chose d'extremement
+	important qui vaut pour la programmation comme pour n'importe quelle
+	discipline. C'est VOUS, VOUS seul qui pouvait apprendre, faire des efforts,
+	avoir le bon état d'esprit et les bonnes motivations pour progresser. 
+	Cette afirmation dans laquelle j'ai une foi absolue est le lietmotiv
+	de cette série de livre. Le long de votre apprentissage, je vous fournirais
+	les connaissances, les références, les exercices et les conseils pour
+	vous permettre d'optimiser votre progression. Pour profiter d'un telle
+	pédagogie, vous devez avoir envie de vous impliquer, de faire preuve de
+	disciple et de penser votre avennement en tant que programmeur
+	comme un entrainement sur la durée, au même titre qu'une pratique
+	sportive ou la pratique d'un instrument de musique.
+
+	Je ne pense pas que l'on puisse griller des étapes, et ce cursus
+	vise à faire de vous un programmeur solide.
+	Si vous cherchez à aquerir quelques notions pour pouvoir
+	programmer "vite fait" ou être guidé dans un tutoriel pour
+	programmer quelque chose en particulier, tournez vous vers d'autres
+	ressources, il en existe des parfaitements adaptés à vos besoins.
+	Attention, ce livre cherche à vous apprendre la programmation
+	en général, si vous cherchez à apprendre un langage en particulié
+	passez votre chemin.
+
+
+A qui s'addresse ce livre:
+
+	Ce livre s'adresse aux débutants absolue en programmation.
+	Toutefois il attend du lecteur des compétences très basiques
+	dans l'utilisation d'un ordinateur, si vous n'étes
+	pas confiants à l'idée d'éffectuer une recherche internet,
+	à localiser un logiciel sur votre ordinateur ou que vous
+	ne savez pas ce qu'est un dossier, vous devriez commencer
+	à apprendre tout cela, puis revenir ici.
+	Dans l'ensemble des tomes, le lecteur est considéré comme
+	une personne voulant se concentrer sur la programmation,
+	mais ayant une ouverture d'esprit suffisante pour progresser
+	dans des notions annexes qui y sont liés, comme l'anglais,
+	l'utilisation d'un terminal de commandes ou simplement
+	l'informatique en général.
+
+	Le long de ce livre, vous passerez d'un niveau inexistant à
+	un niveau que je qualifirais d'Apprenti.
+	Attention, bien que ce livre soit destiné aux pur débutants,
+	si vous ne possédé que quelques connaissances éparsses,
+	ou que vous n'avez que très peu pratiqué, il sera davantage
+	adapté à votre niveau que les livres de niveau plus élevé.
+	L'ensemble des livres de la série est divisé comme suit:
+	Débutant - Apprenti - Intermédiaire - Avancé
+	Il est difficile d'avoir une idée concréte de ce que représente
+	ces niveaux tant les critères pour juger la qualification d'un
+	programmeur sont variés et subjectifs.
+
+	Pour vous donner une idée, après avoir étudié le tome...
+
+		Débutant, vous aurez le niveau requis pour développer vous même
+		des projets de petites taille et de petite complexité, par
+		exemple un jeu vidéo style "arcade" en 2D, un programme d'analyse
+		de texte simple ou une interface web basique. Vous disposerez
+		aussi des bases techniques et méthodologique pour pouvoir
+		contribuer à un projet de taille et de compléxité plus
+		grande mené et tutoré par des développeurs plus expérimentés.
+
+		Apprenti, vous aurez le niveau requis pour développer vous
+		même des projets de taille et de compléxité moyenne, par
+		exemple un jeu vidéo 2D disposant de plusieurs niveau, d'un menu,
+		d'options..., un programme pouvant jouer aux échecs ou un site
+		internet. Vous disposerez aussi des connaissances techniques et méthodologiques
+		pour pouvoir contribuer de façon indépendante à un projet de taille 
+		et de complixé plus grande, sans pour autant être capable
+		de concevoir son architecture et ses fonctionnalités les plus
+		sophistiqués.
+
+		Intermédiaire, vous aurez le niveau requis pour développer vous
+		même des projets de taille et de compléxité importante, par
+		exemple un moteur graphique 2D, un générateur de musique aléatoire mais
+		cohérante ou un compresseur / décompresseur.
+		Vous disposerez aussi des compétances techniques et méthodologiques
+		pour pouvoir collaborer à un projet de taille 
+		et de complixé plus grande, d'en penser la structure globale
+		et de proposer des solutions aux problématique qu'il pose.
+
+		Avancé, vous aurez le niveau requis pour développer vous même
+		des projets de toute taille et de toute complexité,
+		par exemple un jeu vidéo complet en 3D,
+		un navigateur internet, un langage de programmation...
+		Vous disposerez de l'expérience nécessaire pour mener un projet de
+		grande envergure, de le concevoir de bout en bout et de pouvoir
+		prendre des décisions critiques sur la façon d'en programmer chaque
+		fonctionnalité.
+
+	Et noubliez pas, je ne fais que vous donner une idée grossière
+	du niveau que chaque tome vise à vous faire atteindre. Les exemples
+	de programmes donnés ci-dessus ne sont là que pour
+	vous permettent de vous racrocher à des choses relativement concrètes.
+	Après l'étude d'un tome vous ressortirez avant tout
+	enrichi de nouvelles connaissances, techniques et bon réflexes
+	qui vous permettrons d'aborder la création de n'importe quel
+	type de logiciel.
+
+	SOMMAIRE:
+
+		[ Cours ]
+                        [Seances]
+		[ Annexes ]
+
+	COURS N°1: - INTRODUCTION A LA PROGRAMMATION -
+
+~ Le but de se livre est de vous faire
+gagner du temps et de vous faire éviter
+le plus possible des erreurs, des mauvaises pratiques,
+de vous ouvrir l'esprit et de vous présenter les multiples
+horizons qui consitituent la programmation.
+
+En tant que professeur je cherche à vous aider,
+pour certains élève, ne pas étudier se livre
+est le meilleur conseil que je puisse donner.
+
+Si ce n'est pas déjà fait, lisez l'introduction du livre
+qui vous aidera à savoir s'il est fait pour vous. ~
+
+~ Chaque cours est jalloné de notes indiquant les annexes
+situés à la fin de ce livre. Ces annexes ne sont pas forcèment
+facultatives, elles sont séparés de reste du cours car elles
+s'écartent de la programmation ou quelle ne s'inscrivent
+pas dans la continuité linéaire du cours.
+
+Consultez les seulement si vous en resentez le besoin.
+Vous pouvez également les parcourir par curiosité, mais
+faites le en dehors du suivi du cours, pour éviter de
+vous disperser et de vous confondre. ~
+
+
+Si vous êtes ici, c'est que vous avez choisi de devenir programmeur,
+peut être dans le but d'obtenir un emploi, peut être pour en faire un hobby,
+peut être pour réaliser un logiciel que vous avez en tête et qui demande de telles
+compétences? Dans tout les cas noubliez pas, pour progresser en programmation,
+comme dans toute discipline il vous faudra de l'envie et du temps.
+Qu'importe le talent, ceux qui deviennent d'excellents sportifs, d'excellents musiciens,
+d'excellents chercheurs... sont ceux qui pratiquent régulièrement, pendant des années,
+et surtout avec concentration et conviction.
+N'attendez pas de solution miracle, je ne ferais que vous guider dans VOS efforts...
+
+Ce genre de discours bateau, vous l'avez entendu des dixaines de fois,
+vous vous dites peut etre que vous savez déjà tout ça.
+Vous préféreriez commencer à programmer immédiatement?
+Aussi évident que cella puisse parraitre, avoir entendu un tel discours
+n'est pas suffisant, il faut l'appliquer. Si vous l'appliquiez vous ne seriez
+pas aussi préssé de commencer le cours.
+Et surtout, si vous l'appliquiez, vous seriez DEJA programmer.
+
+Ne sous-estimez pas l'importance des discours qui cherchent à
+vous faire réfléchir ou à vous remettre en question, ils
+poncturons les cours aux moments nécaissaires, soit pour
+vous faire prendre du reculs sur ce que vous venez de faire, soit
+pour vous faire prendre de l'élan pour ce qui va venir.
+Je conçois que vous soyez tous pressé de commencer.
+
+Encore quelques minutes de patience car avant de plonger
+dans le code nous allons devoir parler des...
+
+	SEANCE N°0: PREREQUIS, INSTALATION ET ENVIRONNEMENT DE DEVELOPPEMENT:
+
+Comme vous pouvez vous en douter, vous ne pourrez suivre ce cours
+sans un ordinateur à votre disposition.
+Votre ordinateur ferra parfaitement l'affaire.
+S'il ne vous pose pas de problème au quotidien, il suffira pour
+programmer. S'il est lent et/ou instable, restaurez le ou changez le
+si vous en avez les moyens. Un ordinateur haut de gamme n'est pas
+forcèment utile pour programmer, en tout cas vous pourrez suivre
+ce cours avec un ordinateur médiocre.
+
+Il est également quasiment indispensable que vous ayez accès à une
+connexion internet, ne serait-ce que de façon sporadique.
+Le recceuil de ressource presque infinie qu'est internet, ainsi que la communication
+qu'il permet avec d'autres programmeurs est inestimable. *-> UN POINT SUR INTERNET
+
+Pour en finir avec les prérequis j'ajouterais que ce cours
+est destiné aux débutants en programmation, mais pas aux
+novices dans l'utilisation d'un ordinateur.
+Si vous n'etes pas confiants à l'idée de faire une recherche internet,
+de localiser un logiciel sur votre ordinateur ou d'organiser
+des dossiers et des fichiers dans votre système d'exploitation,
+apprenez à faire de telle chose et revenez vers ce cours.
+
+Nous allons maintenant procéder à l'instalation primordiale au cours.
+L'interpreteur de Python en version 2.7.x.
+    # Par 2.7.x j'entends n'importe quelle version qui commence par 2.7.
+Il est possible que vous disposiez déjà d'une version de Python
+adéquate pour suivre ce cours.
+
+Pour le savoir:
+	1 - Ouvrez le terminal de commande, en recherchant terminal
+		dans le menu de recherche de votre ordinateur, si vous n'arrivez pas à l'ouvrir de cette
+		façon, cherchez sur internet.
+			Si vous souhaitez en savoir plus sur le terminal de commande
+			et ces possibilités: *-> UN POINT SUR L'UTILISATION DU TERMINAL DE COMMANDE
+	2 - Entrez python.
+			# Par entrez python j'entends: ecrivez python puis appuyez sur la touche entré.
+		Le terminal devrait vous répondre avec quelque chose
+		ressemblant à ceci:
+			Python 2.7.13 (default, Jan 15 2017, 08:53:49) 
+			[GCC 6.1.1 20160501] on linux2
+			Type "help", "copyright", "credits" or "license" for more information.
+		Du moment que les lignes commencent par Python 2.7 cela
+		signifie que la "bonne" version de Python est installé sur votre ordinateur.
+		Si les lignes ne commencent pas par Python 2.7, vérifiez
+		que vous avez bien exécuté l'étape 2.
+		Si vous l'aviez bien exécuté, et que
+		le terminal vous indique que Python n'est pas installé avec:
+			bash: python: command not found
+		Ou qu'il vous indique que vous avez une version autre 
+		que 2.7.x rendez vous dans l'annexe *-> INSTALLATIONS.
+
+Python installé, vous allez maintenant créer votre premier programme:
+
+	1 - Rendez vous dans votre dossier d'utilisateur, celui-ci correspond à l'endroit ou vous êtes
+		censé conserver vos dossiers et fichiers personnels. 
+		Pour ce faire entrez:
+                        (Si votre système d'exploitation est MacOs ou Linux) cd ~
+			(Si votre système d'exploitation est Windows) cd %HOMEPATH%
+			# Pour en savoir plus consultez l'annexe consacré
+			à l'utilisation du *-> terminal de commande.
+	2 - Créez un nouveau dossier nommé programmation_debutant
+		(honettement le nom importe peu, mais gradez en tête que je ferai référence
+		a ce dossier sous ce nom) en tapant mkdir programmation_debutant.
+		Vous mettrez dans ce dossier tout les exercices réalisez via ce livre.
+	3 - Ouvrez un fichier en tapant:
+			(Si votre système d'exploitation est MacOs) textedit ex_00.py
+			(Si votre système d'exploitation est Windows) notepad ex_00.py
+			(Si votre système d'exploitation est Linux) kate ex_00.py
+				# Si vous n'arrivez pas à ouvrir le fichier avec cette commande
+				  cherchez sur internez quel est l'éditeur de texte par defaut
+				  de votre système d'exploitation.
+		textedit/notepad/kate est le logiciel que vous utilisez pour ouvrir un nouveau fichier nommé ex_00.py.
+		Ce fichier n'existe pas encore, il va être crée à votre demande et sera enregistré sur
+		le disque dur de votre ordinateur au moment ou vous l'enregistrerez.
+	4 - Ecrivez exactement les lignes suivantes dans votre éditeur de texte,
+            écrivez chaque caractéres au clavier, pas de copier-coller:
+
+                #!/usr/bin/env python
+                # -*- coding: utf-8 -*-
+                print "Si vous lisez ceci, le programme fonctionne."
+
+		Ces lignes resterons mystérieuses pendant un moment, il est totalement normal
+		que vous ne les compreniez pas. Pour des raisons pédagogique vous devrez
+		parfois vous contenter de copier des fragment de code sans en saisir le sens.
+		Sauvegardez (en appuyant en même temps sur les touches Ctrl/Cmd et s).
+	5 - Entrez la commande suivante dans le terminal de commandes:
+                python ex_00.py
+		python suivi d'un nom de fichier avec l'extension .py
+		indique que vous souhaitez traduire le contenu textuel d'un fichier
+		écrit dans le langage Python en programme et le lancer.
+		Vous devriez voir le message suivant apparaitre:
+			Si vous lisez ceci, le programme fonctionne.
+		Si un message différent apparait, répétez les étapes
+		2 à 5, vous devez écrire exactement les lignes données
+		dans l'étape 4.
+		Si meme en respectant scrupuleusement les étapes précedentes
+		vous n'arrivez toujours pas au résultat souhaitez, rendez
+		vous dans l'annexe *-> FLORILEGE DES ERREURS COURANTES
+	
+Bien joué! Vous venez d'écrire votre premier programme, en Python.
+Pendant la première moitié de ce livre nous programmerons exclusivement
+en Python, en n'utilisant rien d'autre que le terminal de commande et
+un simple éditeur de texte.
+
+Pourquoi Python plutot qu'un autre langage?
+    Car Python est un langage facile d'acces, épuré et utile.
+    C'est un langage qui vous permettra de rapidement saisir les concepts
+    généralistes de la programmation en vous épargnant le plus possible
+    de confusion liés à d'autres éléments plus cryptiques.
+    Le but de la première partie de ce livre est de vous donner
+    des bases de programmation, applicables à n'importe quel langage,
+    les spécificités de Python que vous aurez irévédiablement à utiliser
+    ne seront que fortuites.
+    Nous utiliserons un autre langage dans la seconde partie du livre,
+    ceci également pour des raisons pédagogiques.
+
+Pourquoi utiliser un éditeur de texte aussi basique pour programmer?
+    Effectivement, vous pouriez vous passer de tout ça en utilisant
+    un IDE. 
+            # Integrated Developpement Environnement.
+              Environnement de programmation tout en un, qui met en place
+              des aides pour programmer, éxecuter le code et organiser ses
+              projets en dossiers et fichiers.
+    Si j'insiste tant pour que vous programmiez dans un environement
+    minimaliste, c'est parce qu'utiliser de nombreux et puissants outils
+    vous macherai le travail et détournerez votre attention du réel sujet
+    d'étude, les bases de la programmation.
+    Utiliser un éditeur de texte simple vous oblige à mémoriser chaque
+    éléments que vous écrivez et à vous concentrer davantage sur chaque
+    caractère que vous tapez.
+
+    Les éditeurs de texte avancés disposent de fonctionnalités
+    mettant en emphase d'éventuelles fautes de frappes ou de programmation,
+    ils donnent également des indications au fur et à mesure que vous écrivez,
+    pour finir vos mots ou vos phrases automatiquement.
+    Ces coups de pouces peuvent s'avèrer très utile, mais ils sont totalement
+    anti-didactiques.
+
+Pourquoi passer par le terminal de commande pour executer le code Python
+ainsi que pour tout le reste?
+    L'éxécution du code directement à l'intérieur d'un IDE masque
+    la façon originelle et basique d'éxécuter votre code:
+    via un terminal de commande.
+    Vous enlevant aussi au passage, l'occasion d'améliorer votre maitrise
+    de cet outil extremement pratique et efficace.
+    Chaque seconde perdu aujourd'hui à faire le plus de chose
+    possible via le terminal de commande, de part votre amateurisme,
+    est une seconde que vous gagnerez à chaque utilisation
+    future d'un ordinateur.
+
+Ne vous preocupez pas trop des moyens employés durant ce cours.
+Ceux-ci ont été choisi dans une optique d'équilibre entre la
+facilité d'apprentissage à cours terme et la compréhension
+ainsi que l'utilisabilité à long terme.
+Au fil du temps de nouveaux langages, de nouveaux outils et
+de nouvelles méthodes auront leur place dans ce cours.
+Dans les prochains livres j'attendrais de vous de
+découvrir et sélectionner vos propres moyens.
+
+Pour l'heure concentrons nous sur ...
+
+	COURS N°2: - LES FONDAMENTAUX DE LA PROGRAMMATION -
+
+Un programme informatique peut se définir de mille différentes façons.
+La définition que je vais vous donner, est faite du point de vue
+du programmeur:
+
+Un programme:
+	- Défini des données et/ou reçoit des données de l'exterieur.
+	- Génére des résultats (qui sont de nouvelles données) à partir de données existantes.
+	- Affiche des données, persiste, ou trasfère des données vers l'extérieur.
+
+Cette définition met en lumière la façon dont nous allons aborder
+la programmation et structurer notre code.
+
+Pour acquerir les connaissances minimales nécessaire pour
+programmer, nous étudirons, dans cet ordre, les trois points listés ci-dessus.
+Cepandant, recevoir et afficher des données savère tellement pratique pour le déroulement
+des exercices, que des éléments de code servant ce but vous serons fournis des maintenant.
+Vous devrez donc utiliser des fragments que je vous procurerez, au départ tel quels, vous
+pourrez les manipuler au fil de l'accroissement de votre compréhension.
+Ne vous inquietez donc pas si ceux-ci sont mystèrieux au départ, je vous
+expliquerez leur concept sous-jacent plus tard.
+
+        SEANCE N°1: - DÉFINIR DES DONNÉES, VARIABLES ET VALEURS - 
+
+Ouvrez votre terminal, et rendez-vous à l'emplacement dédié à vos exercices.
+(Normalement home/programmation_debutant)
+Creez et ouvrez le fichier ex_01.py en tapant:
+    (Si votre système d'exploitation est MacOs) textedit ex_01.py
+    (Si votre système d'exploitation est Windows) notepad ex_01.py
+    (Si votre système d'exploitation est Linux) kate ex_01.py
+Ecrivez exactement les lignes suivantes dans votre éditeur de texte,
+écrivez chaque caractéres au clavier, pas de copier-coller:
+    #!/usr/bin/env python
+    # -*- coding: utf-8 -*-
+
+    mozart_symphonies_amount = 41
+    light_speed_ms = 299792.458
+    message = "Si vous lisez ceci, le programme fonctionne."
+
+    print "Mozart a écrit", mozart_symphonies_amount, "symphonies."
+    print "La vitesse de la lumière (en metres/seconde) est:", light_speed_ms
+    print message
+     
+Sauvegardez le fichier, puis, dans le terminal de commandes entrez:
+    python ex_01.py
+Si votre programme est correctement éxécuté, les lignes suivantes
+s'afficherons dans votre terminal:
+    Mozart a écrit 41 symphonies.
+    La vitesse de la lumière (en metres/seconde) est: 299792.458
+    Si vous lisez ceci, le programme fonctionne.
+Si ce n'est pas le cas, assuré vous de bien avoir écrit à l'identique
+le contenue ci-dessus.
+Si meme en respectant scrupuleusement les étapes précedentes
+vous n'arrivez toujours pas au résultat souhaitez, rendez
+vous dans l'annexe *-> FLORILEGE DES ERREURS COURANTES
+
+Faisons le tour du programme que vous venez d'écrire, ligne par ligne:
+    ligne 1: Une ligne particulièrement cryptique que vous devez
+             obligatoirement écrire en première ligne de votre programme.
+             Cette ligne est spécifique au langage Python.
+             Elle indique l'emplacement un programme qui permet d'éxécuter
+             le code Python. Si vous ne comprenez pas pour l'instant ce
+             n'est pas dérangeant.
+
+    ligne 2: Une ligne particulièrement cryptique que vous devez
+             obligatoirement écrire en deuxième ligne de votre programme.
+             Cette ligne est spécifique au langage Python.
+             Elle indique que votre fichier peut contenir des caratères
+             qui sortent des caractères basiques de la langue anglaise.
+             Par exemple le 'é' ou le 'ç'.
+
+    ligne 3: Rien...en fait non, un saut de ligne.
+             Cela peut paraitre annodin, mais les sauts
+             de ligne permettent d'améliorer la lisibilité du programme.
+             Ce saut de ligne là montre la séparation des deux lignes du
+             haut qui sont une sorte d'entete et la suite du programme,
+             qui est le contenu vraiment digne d'attention.
+             En théorie ce saut de ligne est facultatif car il ne modifi
+             pas le résultat du programme.
+             En pratique il est OBLIGATOIRE, vous vous rendrai compte à
+             quel point en accumulant de l'éxpérience et des heures
+             de lecture de code.
+             Il en va d'ailleurs de même pour les espaces situés entre
+             les mots et les symboles, bien que n'étant pas "imformatiquement"
+             obligatoires, humainement, ils le sont.
+                 mozart_symphonies_amount = 41
+                 tau = 3.14 + 3.14
+             est simpliment meilleur que
+                 mozart_symphonies_amount=41
+                 tau=3.14+3.14
+
+    ligne 4: mozart_symphonies_amount = 41
+             Cette ligne représente l'essentiel de ce chapitre,
+             définir des données à l'aide de variable et de valeurs.
+             mozart_symphonies_amount est une variable
+             41                       est une valeur
+             =                        est l'association d'une valeur à une variable
+
+             Le mot variable sonne plus complexe que ce qu'il est réellement,
+             un nom. C'est un nom qui représente une valeur, c'est parce que
+             la valeur qu'il représente peut changer (ou varier) que c'est une variable.
+             Cette ligne peut ce simplifier en Français de cette façon:
+                 mozart_symphonies_amount est 41
+             Un élément de la phrase reste flou, le nom de la variable,
+             mozart_symphonies_amount. Si la variable dénote autant
+             avec le reste de la phrase c'est parce que, elle est écrite
+             en anglais (qui plus est, tronqué de certains mots)
+             et avec des _ à la place des espaces.
+
+             La présence des _ s'explique par le fait qu'en programmation,
+             les nom ne doivent pas contenir d'espace, les caractères autorisés
+             sont (en Python et dans la plupart des langages):
+             les lettres de a à z (minusucle et majuscule) et le caractère _ .
+             Ne pouvant pas écrire:
+                mozart symphonies amount
+             Les possibilités sont:
+                mozartsymphoniesamount
+                mozart_symphonies_amount
+                mozartSymphoniesAmount
+             Parmi ces trois possibilités seules les deux dernières
+             mettent en avant que la variable est constitué de trois
+             mots, la rendant compréhensible.
+             Dans ce livre j'utiliserais toujours le style à base de _.
+             Je vous laisse le choix entre les _ et la capitalisationDesLettres.
+             Cepandant, il est OBLIGATOIRE de toujours utiliser l'un OU l'autre
+             dans un même programme.
+             Mélanger les noms de variables contenant des _
+             et des majuscules est une mauvaise idée, j'en explique les raisons
+             dans l'annexe consacré au style. *-> UN POINT SUR LE STYLE
+
+             Reste à comprendre la raison du nommage de la variable en anglais.
+             Pourquoi mozart_symphonies_amount plutot que nombre_symphonies_mozart?
+             Des dizaines de raisons font qu'il est plus avantageux de nommer ses variables
+             en anglais (en ommetant les mots comme "the" ou "of") j'expliquerai pourquoi
+             dans les annexes sur l'anglais et le style.   
+             Dans ce livre je nommerai toujours les variables en anglais.
+             Je vous conseille vivement de nommer vos variables en anglais
+             dès maintenant, même si vous n'êtes pas très à l'aise en anglais,
+             ce sera l'occasion de vous améliorer.
+             Si ecrire les variable en anglais vous frustre trop, alors
+             utilisez le français, j'insiste tout de même, n'écrivez pas
+             des variable en français ET en anglais dans un même programme.
+
+             Pour clarifier les choses, recomposont la déclaration de la
+             variable, du langage humain vers le code:
+                le nombre de symphonies écrite par mozart est 41
+                nombre symphonies mozart est 41
+                nombre_symphonies_mozart est 41 OU mozart_symphonies_amount is 41
+                mozart_symphonies_amount = 41
+
+    ligne 5: light_speed_ms = 299792.458
+             Une déclaration de variable, comme pour la ligne précedente.
+             Une différence demeure tout de même, au lieu d'assigner
+             un nombre entier (41) on assigne un nombre à virgule (299792.458).
+             Vous noterez que les nombres à virgules utilisent le point comme séparateur
+             décimal (en programmation on utilise toujours cette notation).
+             Python est un langage typé implicitement, celon la valeur que vous
+             assignez à une variable elle va automatiquement obtenir un type.
+             integer si vous lui assignez un entier (par exemple 3).
+             float si vous lui assignez un nombre à virgule (par exemple 3.0)
+             Attention, car c'est la façon dont vous écrivez le nombre
+             qui va le qualifier en temps qu'integer ou float, pas la valeur
+             mathématique du nombre.
+             Par exemple même si en math 3 est équivalent à 3.0, Python considére
+             le premier comme un integer et le second comme un float.
+             Nous reviendrons plus tard sur la signification du typage implicite
+             et ses implications.
+
+    ligne 6: message = "Si vous lisez ceci, le programme fonctionne."
+             La déclaration de la variable message dont le type est string.
+             Les valeurs entre guillements sont des chaines de caractères (string).
+             Ces valeurs sont reconnus par le programme comme du texte.
+             La présence des guillemets permet de diférencier le texte
+             des mots et symboles clés, ainsi que des noms que vous déclarez (variables et autre).
+             Les guillemets permettent aussi de spécifier le type, par exemple:
+             douze = 12 (interger | entier) et douze = "12" (string | chaine de caractere)
+             Les chaines de caratères feront l'objet d'un chapitre complet plus tard,
+             ne vous en soucié pas trop pour l'instant.
+
+    ligne 7: Un saut de ligne, dans toute sa splendeur, admirez comme il sépare
+             soigneusement les déclaration de variable du reste du code.
+
+    ligne 8: print "Mozart a écrit", mozart_symphonies_amount, "symphonies."
+             Vous vous souvenez de la façon dont nous avons défini un programme
+             informatique?
+
+             Un programme:
+                    - Défini des données et/ou reçoit des données de l'exterieur.
+                    - Génére des résultats (qui sont de nouvelles données) à partir de données existantes.
+                    - Affiche des données, persiste, ou trasfère des données vers l'extérieur.
+
+             Les déclaration de variables se classent dans le premier point,
+             la ligne 8 dans le troisième, elle affiche des données.
+             La commande print va demander à votre ordinateur de prendre la valeur
+             qui suit ("Mozart a écrit", mozart_symphonies_amountn, "symphonies.")
+             et de l'afficher dans le terminal de commande
+             (print se traduit par imprimmer, mais pensez plutot à afficher/écrire à l'écran).
+             Notez la syntaxe de la valeur:
+             "Mozart a écrit", mozart_symphonies_amount, "symphonies."
+                ET PAS
+             "Mozart a écrit mozart_symphonies_amount symphonies."
+
+             Grace à la séparation de mozart_symphonies_amount du reste de la chaine
+             de caractère grace aux virgules, Python va coller la valeur de
+             mozart_symphonies_amount (qui est 41) au millieu de la chaine de caractère.
+             Ainsi: "Mozart a écrit", mozart_symphonies_amount, "symphonies."
+             Correspond à: "Mozart a écrit 41 symphonies."
+             (A la place des virgules il est aussi possible d'utiliser
+              le symbole plus, je vous laisse vous renseigner sur la
+              différence entre les deux sur internet).
+
+    ligne 9: print "La vitesse de la lumière (en metres/seconde) est:", light_speed_ms
+             Cette instruction est très similaire à la précédente, vous remarquerez 
+             une difference, la valeur à coller au message est situé à la fin.
+             Il est possible de combiner des valeurs de variables
+             et des chaines de charactères litérales (le texte placé entre guillemet)
+             dans n'importe quel ordre. Souvenez-vous bien de placer une virgule
+             entre chaque élément.
+
+    ligne 10: print message
+              Idem, cette fois ci seul la valeur de message
+              (Si vous lisez ceci, le programme fonctionne.) sera affiché.
+
+Relisez l'analyse ligne à ligne une seconde fois si nécaissaire mais pas plus.
+C'est en codant qu'on devient coderon, vous assimilerez les différents
+concepts au fil du temps et des exercices.
+
+Le programme précédent, python ex_01.py, pourrait être écrit de différentes
+façon et aboutir au même résultat.
+Par exemple comme ceci, en remplaçant les variables par des valeurs litérales:
+
+    #!/usr/bin/env python
+    # -*- coding: utf-8 -*-
+
+    print "Mozart a écrit 41 symphonies."
+    print "La vitesse de la lumière (en metres/seconde) est: 299792.458"
+    print "Si vous lisez ceci, le programme fonctionne."
+
+Comparé au code que nous avons passé en revu, celui-ci est limpide.
+Pour un programme aussi court et aussi peu complexe, l'utilisation
+de variable est superflue, mais un logiciel utile ne peut se passer
+de variables.
+
+L'interet de défnir des données dans un programme en assignant des
+valeurs à des noms est de rendre son programme plus compréhensible et
+maléable. Dans certains cas les variables ont un role fonctionnel,
+sans elles l'enchainement logique des instruction ne peut se faire.
+
+Quel est l'interet de recopier le code du cours?
+    Vous avez surement remarqué que je met un point d'honneur
+    à vous faire recopier les exercices à la main avant tout le reste.
+    La copie manuelle aide à retenir les informations et vous OBLIGE à
+    lire les lignes de code.
+    Ces raisons sont déjà suffisantes pour vous faire endurer le labeur
+    de recopier du code sans copier/coller.
+
+    Mais ce n'est pas tout, sachez que du/de la débutant/e à l'expert/e
+    une partie hallucinante des bugs présents dans un programme est due
+    à des lignes de code qui ont étés copier/coller d'un autre endroit
+    du programme.
+    Soit ces lignes n'ont pas été suffisament lu et comprises et sont réutilisées
+    à mauvais escient, soit la personne qui les a copié à oublié d'y faire une
+    petite modification pour leur permettre de fonctionner dans un nouveau contexte.
+
+    L'exactitude des programmes est un point essentiel à la programmation,
+    voyez la copie des bout de codes du cours comme un entrainement au
+    débogage (correction d'erreur) de vos futur programme.
+
+Exercies:
+    
+    Quelques conseils pour ne pas que vous soyez perdu sur ces premiers
+    exercices:
+
+    Pour chaqu'un des exercices, créez le fichier correspondant
+    dans home/programmation_debutant.
+    Ne regardez pas le cours tout en faisant un exercice,
+    essayez de le resoudre en totale indépendance, si vous êtes bloqués,
+    consultez la section indices situé à la suite des exercices.
+    Si après de multiples essais vous n'aboutissez pas au bon résultat
+    consultez la correction.
+    Si vous aboutissez au bon résulat, consultez quand même la correction.
+    Un bon cycle de travail pour les exercices est:
+    essai, erreur, consultation de l'indice, répétition du cycle..., consultation de la correction.
+    Placez-vous dans le dossier de vos exercices via le terminal de commande,
+    autrement vous ne pourrez pas executer vos programmes.
+    Vous pouvez tester/executer vos programme en tapant python nom_du_fichier.
+
+    ex_02.py:
+        Ecrivez un programme qui affiche les lignes suivantes dans le
+        terminal de commandes:
+            Bonjour je m'appelle Miguel Sanchez.
+            La racine carée de 9 est 3.
+            99.99 pourcent des gens aiment le chocolat.
+    ex_03.py:
+        Si vous n'aviez pas utilisé de variables dans l'exercice
+        précédent, extrayez:
+        "Miguel Sanchez" de la première phrase
+        "9" et "3" de la deuxième phrase
+        "99.99" de la troisième phrase
+        et associez ses valeurs à des variables.
+        Vous devez aboutir au même résultat que dans l'exercice précédent.
+
+    ex_04.py:
+        Déclarez trois variables differentes contenant chacune la valeur
+        13, une pour chaque type possible (entier, nombre à virgule, chaine de charactère).
+
+    ex_05.py:
+        Ce programme vous est founit:
+            #!/usr/bin/env python
+            # -*- coding: utf-8 -*-
+            
+            biggest_country = "Russia"
+            smallest_country = "Vatican City"
+
+            print "The biggest country in the world is", biggest_country
+            print "The smallest country in the world is", smallest_country
+
+        Ajoutez une variable contenant le nom du pays le plus peuplé du monde.
+        Ajoutez une variable contenant le nom du second pays le plus peuplé du monde.
+        Affichez ces valeurs à l'écran en vous inspirant des print déjà présents.
+
+    ex_06.py:
+        Depuis le dernier exercice la démographie des pays à changé et l'Inde
+        est désormais plus peuplé que la Chine.
+        A partir du programme précédent, et sans modifier les lignes déjà
+        présentes (vous êtes uniquement autorisez a ajouter des lignes),
+        répercutez le nouveau classement par population des pays.
+
+Indices:
+
+    ex_02.py:
+        Vous lancez votre programme et obtenez ce message:
+
+        File "ex_02.py", line 3
+            SyntaxError: Non-ASCII character '\xc3' in file ex_02.py on line 3,
+            but no encoding declared; see http://python.org/dev/peps/pep-0263/
+            for details
+
+        Vous n'avez pas correctement déclarez les informations de début de fichier.
+        Ouvrez l'exercice 01 et copiez les deux lignes situés au début du fichier.
+        Tous vos programmes en Python doivent commencer par ces deux lignes.
+
+        Vous lancez votre programme et obtenez ce message:
+
+        File "ex_02.py", line 4 
+            print Bonjour je m'appelle Miguel Sanchez.
+                           ^
+        SyntaxError: invalid syntax    
+
+        Ou celui-ci:
+
+        File "ex_02.py", line 4 
+            print "Bonjour je m'appelle Miguel Sanchez.
+                                                      ^
+        SyntaxError: EOL while scanning string literal    
+
+        En programmation, le texte (aussi appelé chaine de caractères)
+        est indiqué entre guillemets, n'oubliez ni de les ouvrir, ni
+        de les fermer.
+
+    ex_03.py:
+        Vous pouvez utiliser le symbole + plutot que , pour coller
+        des variables dans les chaines de caractères sans ajout
+        d'espaces, de cette façon vous pouvez éviter l'espace avant
+        le point de fin de phrase dans:
+            print "Bonjour je m'appelle " + name + "."
+
+    ex_06.py:
+        Cet exercice un peu tordu peut se resoudre de deux
+        façon, soit, en écrasant les valeurs des variables
+        , soit, en les interchangeant.
+
+Corrections:
+
+    ~ Les corrections ne sont pas des programmes parfaits ou
+    des solutions unique, seulement des solutions correctes
+    parmis tant d'autres possibles. Vous pouvez arriver au même
+    résultat avec des lignes de codes différentes, mais prétez
+    tout de même attention au style
+    (sauts de ligne, espaces, noms des variables), et inspirez vous
+    en, il est probablement plus clair que le votre. ~
+
+    ex_02.py:
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+
+        print "Bonjour je m'appelle Miguel Sanchez."
+        print "La racine carée de 9 est 3."
+        print "99.99 pourcent des gens aiment le chocolat."
+
+    ex_03.py:
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+
+        name = "Miguel Sanchez"
+        starting_number = "9"
+        result = "3"
+        pourcent = "99.99"
+
+        print "Bonjour je m'appelle " + name + "."
+        print "La racine carée de " + starting_number + " est " + result + "."
+        print pourcent + " pourcent des gens aiment le chocolat."
+
+    ex_04.py:
+        #!usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        integer = 13
+        floating = 13.0
+        string = "13"
+
+    ex_05.py:
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        biggest_country = "Russia"
+        smallest_country = "Vatican City"
+        most_populated_country = "China"
+        second_most_populated_country = "India"
+        
+        print "The biggest country in the world is", biggest_country + "."
+        print "The smallest country in the world is", smallest_country + "."
+        print "The most populated country in the world is", most_populated_country + "."
+        print "The second most populated country in the world is", second_most_populated_country + "."
+
+    ex_06.py:
+
+        En premier lieu, analysons la technique qui consiste
+        à écraser les variables avec des nouvelles valeurs.
+
+        La variable s'oppose à la constante de par le fait
+        que sa valeur peut changer au fil du programme.
+        Ainsi il suffit de réassigner leur valeur aux variables
+        représentant le pays le plus peuplé et le second pays le
+        plus peuplé.
+
+        most_populated_country = "China"
+        second_most_populated_country = "India"
+
+        most_populated_country = "India"
+        second_most_populated_country = "China"
+
+        Evidemment, tout ceci n'a de sens que dans le cadre de la
+        contrainte de l'exercice, on ne peut qu'ajouter des lignes.
+        Sous d'autres conditions vous auriez simplement changé
+        les valeurs de départ des varaibles:
+
+        most_populated_country = "India"
+        second_most_populated_country = "China"
+
+        Maintenant voyons la technique qui consiste à
+        interchanger les valeurs des deux variables.
+        Une approche naive consisterait à faire ceci:
+
+        variable_a = "un"
+        variable_b = "deux"
+
+        variable_a = variable_b
+        variable_b = variable_a
+
+        Tracez la valeur contenue par les variables à chaque ligne
+        et vous vous rendrez compte de l'incohérence de cette approche.
+        Lorsque:
+            variable_a = variable_b
+        variable_a et variable_b ont toutes deux la valeur "deux".
+        La valeur de variable_a est perdu dans l'opération, et l'instruction
+        suivante:
+            variable_b = variable_a
+        n'aura donc aucun effet.
+
+        Pour interchanger les valeurs de deux variables vous aurez besoin d'en utiliser
+        une troisième, comme receptacle, pour ne pas perdre la valeur
+        d'une des variables.
+
+        variable_a = "un"
+        variable_b = "deux"
+
+        variable_c = variable_b
+        variable_b = variable_a
+        varible_a = variable_c
+
+        Ainsi variable_a a la valeur "deux" et variable_b la valeur "un".
+
+        Certains langage de programmation, Python compris, offrent
+        des méthodes alternatives pour interchanger deux valeurs.
+        En Python il est possible de donner des valeurs à plusieurs variables
+        sur une seule ligne, et ceci en étant garanti que les valeurs
+        assignées sont celles de départs.
+
+        variable_a = "un"
+        variable_b = "deux"
+
+        variable_a, variable_b = variable_b, variable_a
+
+        Ce code permet bel et bien d'echanger le contenu des deux
+        variables.
+
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        biggest_country = "Russia"
+        smallest_country = "Vatican City"
+        most_populated_country = "China"
+        second_most_populated_country = "India"
+        
+        most_populated_country, second_most_populated_country = second_most_populated_country, most_populated_country
+        
+        print "The biggest country in the world is", biggest_country + "."
+        print "The smallest country in the world is", smallest_country + "."
+        print "The most populated country in the world is", most_populated_country + "."
+        print "The second most populated country in the world is", second_most_populated_country + "."
+
+Aprés seulement une séance les mots clés, symboles et autres éléments à connaitre
+sont déjà si nombreux, comment les retenir?
+    Ne vous inquietez pas pour ça, certains programmeurs, même après des années
+    de programmation en Python, sont incapable d'écrire:
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+    De tête sans faire d'erreur.
+    Il n'y a que dans les films que l'on voit des programmeurs enchainer des
+    centaines de lignes de code, sans s'arreter pour réfléchir, sans se tromper
+    et sans faire de recherche.
+    Ce genre de scénario est hautement improbable car il stipulerait que le
+    programme qui est en train d'être écrit est parfaitement maitrisé, et si
+    il l'est c'est certainement parcqu'il a déjà était écrit, donc, pourquoi
+    l'écrire à nouveau?
+    Toutefois, voici les conseils à appliquer pour vous familiariser avec le langage
+    de programmation.
+    Ne faites pas de copié-coller pour l'instant, essayez de vous rapeller chaque élément de tête, 
+    si il ne vient pas, consultez un de vos ancien exercice qui le contient, ou référez vous
+    au cours.
+    Pour ce qui est des mots anglais, ne les utilisez pas aveuglement, souvenez vous de leur
+    signification en français, bien que l'on utilise souvent le terme code, 80% de ce qui
+    se trouve dans un programme peut être lu tel quel si l'on parle un minimum anglais.
+    Enfin n'oubliez pas que l'habitude vient avec la pratique, patience, cela
+    vous semblara bientot familier.
+
+Certains ennoncés d'exercices, bien que compréhensible, sont difficile à traduire
+en programme, comment éviter le syndrome de la feuille blanche?
+    Ne pas savoir par quoi commencer ou de quel coté attaquer un problème
+    est récurent en programmation, plus la tache à accomplir est vague et/ou
+    ouverte et plus il est facile d'être perdu.
+    Ce qui manque souvent aux débutants pour se lancer dans un programme
+    c'est l'association d'idées entre les moyens techniques (mot clés, variables, symboles)
+    et les concepts abstrait (calculer une moyenne, afficher un message à l'écran...).
+    Ne vous découragez pas si vous bloquez sur les premières séries d'exercices,
+    essayez de mettre en place les éléments du programme qui vous viennent à l'esprit
+    et n'aillez pas peur de vous tromper en écrivant du code dont vous n'êtes pas
+    sur, on apprend plus en corrigeant ses erreurs qu'en consultant directement
+    la solution.
+
+        SEANCE N°2: - GÉNÉRER DES RÉSULTATS, DONNÉES INCONNUES ET CONDITIONS -
+
+Dans la seance précèdente vous avez eu l'occasion de vous accoutumer
+avec des petits programmes principalement déclaratifs.
+Déclaratifs car chaque donnée y est défini de façon certaine et non conditionnelle.
+Ces programmes ont un intêret très limité.
+Pour entrer dans une toute nouvelle dimension de possibilitées nous allons étudier
+des programmes qui auront pour but de recevoir des donneés de l'utilisateur
+(dans le cas présent, vous) et d'afficher un résultat en retour.
+On aura donc enfin la trinité du logiciel au complet:
+    - Défini des données et/ou reçoit des données de l'exterieur.
+    - Génére des résultats (qui sont de nouvelles données) à partir de données existantes.
+    - Affiche des données, persiste, ou trasfère des données vers l'extérieur.
+
+Ouvrez votre terminal, et rendez-vous à l'emplacement dédié à vos exercices.
+Creez et ouvrez le fichier ex_07.py:
+Ecrivez exactement les lignes suivantes dans votre éditeur de texte,
+écrivez chaque caractéres au clavier, pas de copier-coller:
+    #!/usr/bin/env python
+    # -*- coding: utf-8 -*-
+
+    user_age = raw_input("Enter your age:")
+
+    if user_age < 18:
+        message = "You are minor."
+    elif user_age < 21:
+        message = "You are major in some countries."
+    else:
+        message = "You are major everywhere."
+
+    print message
+
+// Ce renseigner sur la majorité et l'orthographe.
+// Ajouter un exemple avec des prints dans les embranchements conditionnels.
+
+	-- ANNEXES --
+
+	<-* INSTALLATIONS
+
+	INSTALLATION DE PYTHON 2.7
+
+L'installation va sensiblement changer selon
+le système d'exploitation de votre ordinateur.
+
+- Si vous utilisez MacOs:
+	1 - Rendez vous sur https://www.python.org/downloads/mac-osx/
+		et téléchargé la dernière version de Python 2.7 en cliquant
+		sur le lien: Latest Python 2 Release - Python 2.7.x
+		Suivez ensuite les instructions d'installation données par votre ordinateur.
+	2 - Entrez Python dans votre terminal de commande pour vérifier
+		que l'installation s'est produite correctement.
+
+- Si vous utilisez Linux:
+	1 - Rendez vous sur https://www.python.org/downloads/source/
+		et téléchargez la dernière version de Python 2.7 en cliquant
+		sur le lien: Latest Python 2 Release - Python 2.7.x
+		Déplacez votre téléchargement des sources de Python dans un dossier propice,
+		par exemple ~/Public (si vous savez ce que vous faite vous pouvez choisir
+		un autre dossier, sachez que je ferais référence à l'emplacement des sources
+		de Python par ~/Public).
+		Naviguez jusque dans le dossier ou se situent
+		désormais les sources de Python avec cd ~/Public/Python-2.7.xx
+		Entrez ./configure une fois le flot de messages terminé, entrez make un deuxième flot
+		de message se produit, une fois celui-ci terminé tapez sudo make install
+		votre mot de passe vous est demandé, renseignez le.
+		A la fin d'un troisième flot de message, Python est enfin installé.
+	2 - Entrez python dans votre terminal de commande pour vérifier
+		que l'installation s'est produite correctement.
+
+- Si vous utilisez Windows:
+	1 - Rendez vous sur https://www.python.org/downloads/windows/
+		et téléchargé la dernière version de Python 2.7 en cliquant
+		sur le lien: Latest Python 2 Release - Python 2.7.x
+		Suivez ensuite les instructions d'installation données par votre ordinateur.
+	2 - Entrez python dans votre terminal de commande pour vérifier
+		que l'installation s'est produite correctement.
+
+	<-* UN POINT SUR INTERNET
+
+A moins de travailler sur un logiciel qui intéragi avec le web, vous n'avez pas
+besoin d'internet pour programmer. L'aspect autant ludique que pédagogique
+d'intenet est attraillant, mais gardez à l'esprit que c'est un outil à double tranchant.
+Correctement utilisé, internet vous permettra de progresser plus rapidement et sainement,
+car nombreux sont ceux dont vous marchez dans les traces.
+Ils vous éviterons de tomber dans les pièges qu'ils ont déjà expérimentés,
+de commetre des erreurs avèrès dont vous n'avez pas conscience,
+vous donnerons des astuces éprouvés qui vous faciliterons la vie.
+Ils vous donnerons également leurs avis, tous différents et contradictoires.
+Certaines personnes et certains articles consultés sur internet vous ferons
+plus perdre de temps encore que si vous vous en étiez passé.
+C'est à ce titre qu'internet doit être utilisé avec parsimonie et discernement.
+Si vous ne faites pas attention grande dépendance à des ressources en ligne
+nuira à votre productivité, votre créativité et à votre épanouissement. 
+Voici donc quelques conseils pour bien utiliser internet, ceux-ci s'appliquent
+vis à vis de ce cours mais également en dehors:
+	- Fermez votre navigateur et (si vous l'avez) perdez cette mauvaise
+	  habitude de trainer sur des réseaux sociaux ou des sites produissant
+	  une distraction.
+	- Durant le début de votre apprentissage, faites le moins de recherche internet possible.
+	  Je vous fournirrez l'ensemble des éléments dont vous aurez besoin, liens
+	  vers les sites y compris.
+	- Prévilégiez d'écrire vous même le code pour accomplir quelque chose
+	  que vous ne savez pas faire.
+	  Chaque fois que vous demandez de l'aide en ligne ou d'utilisez une bibliothèque,
+	  vous passez à coté d'une ocasion de vous améliorer.
+	  Certains vous dirons que réinventer la roue est une perte de temps.
+	  En temps que débutant gardez plutot cette image à l'esprit:
+	  Pour réussir à soulever quelque chose de trop lourd il faut se muscler.
+	  Pour se muscler il faut soulever quelque chose de moins lourd.
+	  Ainsi de suite jusqu'a trouver un poid suffisament léger pour
+	  être soulevé et suffisament lourd pour se muscler.
+	  ( Vous remarquerez que des entorse à cette régle sont faites dans ce livre. )
+	- Lorsque vous ferrez une recherche internet cela sera souvent du à
+	  un bug que vous n'arrivez pas à résoudre vous même.
+	  Avant de lancer votre recherche, disséquez lentement chaqu'une de vos ligne
+	  de code en la commantant avec ce qu'elle fait, souvent vous vous rendrez
+	  compte, soit de la raison du bug, soit que vous ne savez pas ce que fait une
+	  ou plusieur ligne de code. De cette, ou ces lignes, que vous ne saisissez pas,
+	  si possible, extrayez les mots clés ou éléments qui sont la cause de l'incompréhension.
+	  Cherchez dans la documentation, puis dans des sources annexes jusqu'à clairement
+	  compréndre ces éléments. Si après ces étapes vous n'arrivez pas à résoudre votre
+	  problème, prenez du recul, faites autre chose, reposez vous, et revenez y plus tard.
+	  Dans le cas ou vous restez bloqué, posez une question pertinante sur stackoverflow.com.
+	- Utilisez les réseaux sociaux, les sites communautaires et encyclopédiques
+	  pour nourrir votre culture générale de la programmation.
+	  -- insérer des exemple de comptes à suivre sur twitter/youtube, de sites de news
+	  et wikipédia. --
+
+  <-* UN POINT SUR L'UTILISATION DU TERMINAL DE COMMANDES
+
+		cd signifie Change Directory, cette commande permet de naviguer de dossier en dossier.
+		Le symbole ~ (alt gr + é) désigne l'emplacement du dossier utilisateur de l'utilisateur
+		en cours, par exemple si vous etes l'utilisateur Cecile ~ est l'équivalent de /home/Cecile.
+
+		mkdir signifie Make Directory, cette commande vous permet de créer un nouveau
+		dossier qui aura pour nom ce que vous écrivez après mkdir.
+
+		Le symbole ~ (alt gr + é) désigne l'emplacement du dossier utilisateur de l'utilisateur
+		en cours, par exemple si vous etes l'utilisateur Cecile /~ est l'équivalent de /home/Cecile.
+		Pour ce faire entrez mv ~/Downloads/Python-2.7.xx ~/Public (n'oubliez pas, ne tapez pas xx
+		mais les numéros correspondant à la version que vous avez téléchargé).
+		mv signifie move, cette commande permet de déplacer un fichier ou un dossier
+		vers un nouvel emplacement.
+		~/Downloads/Python-2.7.xx (le fichier Python-2.7.xx qui se trouve dans le dossier ~/Downloads)
+		va etre déplacé dans le dossier ~/Public.
+	  
+  <-* FLORILEGE DES ERREURS COURRANTES
+    
+    - Les copier / collé.
+    - = et ==
+
+  <-* UN POINT SUR LES SITES COMMUNAUTAIRES AUTOUR DE LA PROGRAMMATION.
+  <-* UN POINT SUR L'ANGLAIS
+
