@@ -706,7 +706,7 @@ Quel est l'interet de recopier le code du cours?
     voyez la copie des bout de codes du cours comme un entrainement au
     débogage (correction d'erreur) de vos futur programme.
 
-Exercies:
+Exercices:
     
     Quelques conseils pour ne pas que vous soyez perdu sur ces premiers
     exercices:
@@ -749,11 +749,11 @@ Exercies:
             #!/usr/bin/env python
             # -*- coding: utf-8 -*-
             
-            biggest_country = "Russia"
-            smallest_country = "Vatican City"
+            biggest_country = "Russie"
+            smallest_country = "Vatican"
 
-            print "The biggest country in the world is", biggest_country
-            print "The smallest country in the world is", smallest_country
+            print "Le plus grand pays du monde est", biggest_country
+            print "Le plus petit pays du monde est", smallest_country
 
         Ajoutez une variable contenant le nom du pays le plus peuplé du monde.
         Ajoutez une variable contenant le nom du second pays le plus peuplé du monde.
@@ -853,15 +853,15 @@ Corrections:
         #!/usr/bin/env python
         # -*- coding: utf-8 -*-
         
-        biggest_country = "Russia"
-        smallest_country = "Vatican City"
-        most_populated_country = "China"
-        second_most_populated_country = "India"
+        biggest_country = "Russie"
+        smallest_country = "Vatican"
+        most_populated_country = "Chine"
+        second_most_populated_country = "Inde"
         
-        print "The biggest country in the world is", biggest_country + "."
-        print "The smallest country in the world is", smallest_country + "."
-        print "The most populated country in the world is", most_populated_country + "."
-        print "The second most populated country in the world is", second_most_populated_country + "."
+        print "Le plus grand pays du monde est", biggest_country + "."
+        print "Le plus petit pays du monde est", smallest_country + "."
+        print "Le pays le plus peuplé du monde est", most_populated_country + "."
+        print "Le deuxième pays le plus peuplé du monde est", second_most_populated_country + "."
 
     ex_06.py:
 
@@ -874,19 +874,19 @@ Corrections:
         représentant le pays le plus peuplé et le second pays le
         plus peuplé.
 
-        most_populated_country = "China"
-        second_most_populated_country = "India"
+        most_populated_country = "Chine"
+        second_most_populated_country = "Inde"
 
-        most_populated_country = "India"
-        second_most_populated_country = "China"
+        most_populated_country = "Inde"
+        second_most_populated_country = "Chine"
 
         Evidemment, tout ceci n'a de sens que dans le cadre de la
         contrainte de l'exercice, on ne peut qu'ajouter des lignes.
         Sous d'autres conditions vous auriez simplement changé
         les valeurs de départ des varaibles:
 
-        most_populated_country = "India"
-        second_most_populated_country = "China"
+        most_populated_country = "Inde"
+        second_most_populated_country = "Chine"
 
         Maintenant voyons la technique qui consiste à
         interchanger les valeurs des deux variables.
@@ -938,17 +938,17 @@ Corrections:
         #!/usr/bin/env python
         # -*- coding: utf-8 -*-
         
-        biggest_country = "Russia"
-        smallest_country = "Vatican City"
-        most_populated_country = "China"
-        second_most_populated_country = "India"
+        biggest_country = "Russie"
+        smallest_country = "Vatican"
+        most_populated_country = "Chine"
+        second_most_populated_country = "Inde"
         
         most_populated_country, second_most_populated_country = second_most_populated_country, most_populated_country
         
-        print "The biggest country in the world is", biggest_country + "."
-        print "The smallest country in the world is", smallest_country + "."
-        print "The most populated country in the world is", most_populated_country + "."
-        print "The second most populated country in the world is", second_most_populated_country + "."
+        print "Le plus grand pays du monde est", biggest_country + "."
+        print "Le plus petit pays du monde est", smallest_country + "."
+        print "Le pays le plus peuplé du monde est", most_populated_country + "."
+        print "Le deuxième pays le plus peuplé du monde est", second_most_populated_country + "."
 
 Aprés seulement une séance les mots clés, symboles et autres éléments à connaitre
 sont déjà si nombreux, comment les retenir?
@@ -1007,22 +1007,218 @@ Ouvrez votre terminal, et rendez-vous à l'emplacement dédié à vos exercices.
 Creez et ouvrez le fichier ex_07.py:
 Ecrivez exactement les lignes suivantes dans votre éditeur de texte,
 écrivez chaque caractéres au clavier, pas de copier-coller:
+
     #!/usr/bin/env python
     # -*- coding: utf-8 -*-
 
-    user_age = raw_input("Enter your age:")
+    user_input = raw_input("Entrez votre age:")
+    converted_user_input = int(user_input)
 
-    if user_age < 18:
-        message = "You are minor."
-    elif user_age < 21:
-        message = "You are major in some countries."
+    if converted_user_input < 18:
+        message = "Vous êtes mineur dans la plupart des pays."
+    elif converted_user_input < 21:
+        message = "Vous êtes majeur dans la plupart des pays."
     else:
-        message = "You are major everywhere."
+        message = "Vous êtes majeur partout dans le monde."
 
     print message
 
-// Ce renseigner sur la majorité et l'orthographe.
-// Ajouter un exemple avec des prints dans les embranchements conditionnels.
+Prenez un moment pour essayer de comprendre le programme par
+vous même, certains éléments vous sont déjà connu, d'autre non,
+n'hésitez pas à utiliser un traducteur anglais-français pour
+chaque mot que vous ne comprenez pas.
+Vous devriez arriver à une idée assez précise de ce que fait
+le programme.
+Lancez son éxécution avec python et entrez différentes valeurs
+pour tester son comportement.
+Le résultat ne devrait pas vous surprendre, à moins d'entrer par exemple:
+    15.5
+ou
+    trente
+
+Au quel cas le programme crash, il s'arrete brutalement avec l'erreur suivante:
+    Traceback (most recent call last):
+      File "ex_07.py", line 5, in <module>
+        converted_user_input = int(user_input)
+    ValueError: invalid literal for int() with base 10: 'trente'
+
+Bien que le message soit peu avenant et presage un mal de crane imminant,
+faites l'effort de le lire, de le traduire si nécessaire et d'émettre
+une hypothèse sur ce qui cause le bug.
+En clair le message d'erreur vous indique qu'à la ligne 5 du fichier
+que vous éxécuté une erreur ce produit car vous fournissez à la fonction
+int() une valeur invalide.
+Nous verons les fonctions plus en détail au chapitre suivant. 
+Les deux fonctions présentes dans dans le code utilisé sont:
+    ligne 4: raw_input()
+             raw input signifie "saisie brute" ou "entrée telle quelle".
+             Cette fonction récupére le prochain texte entrée dans le
+             terminal de commande, en tant que valeur de type string.
+             La valeur mise entre les parenthèses de cette fonction
+             est le texte à afficher dans le terminal avant la saisie
+             de l'utilisateur.
+             Voyez cette fonction comme une valeur de type string, n'importe
+             laquelle, l'utilisateur tape 10 dans la console, vous recevrez "10"
+             il tape abcde, vous recevrez "abcde" etc...
+
+    ligne 5: int()
+             La valeur mise entre les parenthèses de cette
+             fonction est converti vers une valeur de type int.
+             Souvenez vous qu'en programmation (hormis de rare exeptions)
+             une différence est faite entre le texte "10" et le
+             nombre 10. 10 plus 10 est équal à 20 mais 10 plus
+             le caractère 1 suivi du caractère 0 ("10") n'a pas
+             de sens mathèmatiquement parlant et résulte en une erreur.
+             Les données étant typés suivant un contexte initial,
+             bien que leur types soit différents, elles riques d'être amenées
+             à s'associer entre elle à un moment du programme,
+             c'est à ce moment là que les données doivent être converties vers un
+             type commun.
+             int() permet de convertir les float et les string vers des int.
+             Attention la polyvalence de int() est très limité, vous ne pourrez
+             convertir sans erreur uniquement:
+                - d'autres int
+                - des floats
+                - des chaines de caractères constituées uniquement
+                  de chiffres, seul le signe + ou - au début de la chaine de caractère
+                  echappe à cette règle.
+                  "trente" abouti à une erreur, "10.5" et "10,5" aboutissent à une erreur,
+                  "1 0" également (à cause de l'esapace).
+
+C'est justement ce manque de polyvalence de la fonction int() qui génére l'erreur
+vue plus haut.
+    ValueError: invalid literal for int() with base 10: 'trente'
+
+Vous lancez le logiciel, vous entrez du texte, le logiciel ne peut
+pas convertir le texte entré en entier via la fonction int, fin de l'histoire.
+Nous résoudrons ce problème ultérieurement, pour l'heure nous allons nous pencher
+sur les lignes fonctionnelles du programme. 
+
+    ligne 7: if converted_user_input < 18:
+             if signifie si, si quelque chose est vrai, alors
+             on se retrouve dans une certaine situation, un embranchement.
+             converted_user_input < 18 ça c'est le quelque chose qui doit être
+             vrai pour entrer dans l'embranchement.
+             : (le symbole deux points) délimite le début d'un embranchement,
+             à première vue c'est une ponctuation superflue.
+             Mais il est également possible d'écrire le if, la condition qui doit être vrai
+             et les instructions de l'embranchement sur la même ligne, c'est pour cela
+             que la ponctuation est obligatoire
+             Pour clarifier les choses, recomposont l'entête de
+             l'embranchement conditionnel, du langage humain vers le code:
+                si la saisie de l'utilisateur convertie est un nombre inférieur à 18 alors:
+                si converted_user_input est un nombre inférieur à 18 alors:
+                si converted_user_input < à 18 alors:
+                if converted_user_input < 18:
+    ligne 8:     message = "Vous êtes mineur dans la plupart des pays."
+             Cette ligne constitue les instructions de l'embranchement,
+             si la condition précédente s'avère vraie alors cette instruction
+             sera exécuté, dans le cas contraire, elle ne le sera pas.
+             Cette ligne est une simple déclaration de variable, prétez
+             attention à son emplacement par rapport à la ligne précédente,
+             elle est indenté, c'est à dire qu'elle est décalé vers la droite
+             par la présence d'un certain nombre d'espace au début de la ligne.
+             Quatre exactement. Cette indentation permet de marquer l'imbriquement
+             logique des embrenchements.
+             Toute la syntaxe reste très proche de l'écriture de n'importe
+             quel texte mis en forme.
+             Si on emet une hypothèses:
+                - on en liste les conséquences qui adviendrons si elle s'avère vrai.
+                - le sygne : marque l'introduction de l'embranchement.
+                - les lignes sont indentées.
+            La seule différence est qu'en Python on ne met pas de tiret
+            au débat des lignes.
+    ligne 9: elif converted_user_input < 21:
+             Pareil que la ligne 7, à la seule différence qu'ici
+             on à le mot clé elif, qui signifie "sinon, si" (elif est l'abbréviation de else if)
+             Ce mot clé ne peut se situer qu'après un embranchement ouvert par un if
+             ou un autre elif. Pour la simple raison qu'il ne peut y avoir de sinon sans si,
+             elif introduit un nouvel embanchement dans le cas ou le précédent n'est pas
+             attein et dans le cas ou ce qui suit elif est vrai.
+    ligne 11: else:
+              Comme vous vous en doutez else veut dire sinon, il permet
+              d'introduire un nouvel embranchement après un if ou un elif ayant
+              échoué.
+
+Maintenant que vous avez une vision claire du programme, je vais
+vous montrer d'autres façon de l'écrire, le résultat reste
+le même mais à la lecture les lignes de codes montrent qu'il a été
+écrit avec des intentions différentes.
+
+Deuxième version, plus courte de deux lignes (dont un saut de ligne),
+elle utilise une variable de moins, ce qui est une bonne chose.
+Cependant elle mutiple les occurences du mot clés print, ce qui
+est une mauvaise chose car c'est une fonction d'affichage, de transmission
+des données du programme vers l'extérieur.
+On préférera en général minimiser et centraliser les "effets de bords",
+c'est à dire tout ce qui déborde du programme vers l'éxtérieur, ou ce
+qui vient de l'éxtérieur vers le programme.
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+user_input = raw_input("Entrez votre age:")
+converted_user_input = int(user_input)
+
+if converted_user_input < 18:
+    print "Vous êtes mineur dans la plupart des pays."
+elif converted_user_input < 21:
+    print "Vous êtes majeur dans la plupart des pays."
+else:
+    print "Vous êtes majeur partout dans le monde."
+
+Toisième version, plus courte d'une ligne et qui supprime
+une variable qui ne servait qu'à la conversion, en contrepartie
+un appel de plus à la fonction int() est fait.
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+user_input = raw_input("Entrez votre age:")
+
+if int(user_input) < 18:
+    print "Vous êtes mineur dans la plupart des pays."
+elif int(user_input) < 21:
+    print "Vous êtes majeur dans la plupart des pays."
+else:
+    print "Vous êtes majeur partout dans le monde."
+
+Aucune de ses versions n'est absolument meilleure ou moins bonne
+qu'une autre, dans un programme aussi court, mieux vaut en général
+préférer la version la plus concise et compréhensible.
+Lors de l'écriture de programme de plus grande envergure, choisir
+judisieusement entre différentes solutions qui ont toutes des pours
+et des contres est un des plus grand challenge du programmeur.
+
+// Toute cette section doit être envoyé dans le seances sur les
+// fonctions et  .isdigit() doit être remplacé par une autre fonction
+// les boucles doivent être vu pour créer la fonction
+// A présent revenons sur la fonction int() et sur une solution
+// pour éviter le bug qu'elle provoque.
+// 
+// #!/usr/bin/env python
+// # -*- coding: utf-8 -*-
+// 
+// user_input = raw_input("Entrez votre age:")
+// 
+// if user_input.isdigit():
+//     user_age = int(user_input)
+//     if user_age < 18:
+//         print "Vous êtes mineur dans la plupart des pays."
+//     elif user_age < 21:
+//         print "Vous êtes majeur dans la plupart des pays."
+//     else:
+//         print "Vous êtes majeur partout dans le monde."
+// else:
+//     print "Vous devez entrer un nombre entier."
+
+Exercices:
+
+// Exercice sur des comparaisons différentes.
+
+Indices:
+
+Corrections:
 
 	-- ANNEXES --
 
