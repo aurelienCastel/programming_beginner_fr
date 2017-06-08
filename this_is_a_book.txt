@@ -1183,12 +1183,70 @@ elif int(user_input) < 21:
 else:
     print "Vous êtes majeur partout dans le monde."
 
-Aucune de ses versions n'est absolument meilleure ou moins bonne
+Aucune de ces versions n'est absolument meilleure ou moins bonne
 qu'une autre, dans un programme aussi court, mieux vaut en général
 préférer la version la plus concise et compréhensible.
-Lors de l'écriture de programme de plus grande envergure, choisir
-judisieusement entre différentes solutions qui ont toutes des pours
+Lors de l'écriture de programmes de plus grande envergure, choisir
+judicieusement entre différentes solutions qui ont toutes des pours
 et des contres est un des plus grand challenge du programmeur.
+
+Avant de passer à une série d'exercice, concluons ce chapitre
+par un point sur les opérateurs de comparaisons.
+Les différents opérateurs de comparaison sont:
+    == (égal à)
+    != (différent de)
+    > (supéieur à)
+    < (inférieur à)
+    >= (supérieur ou égal à)
+    <= (inférieur ou égal à)
+Les opérateurs de comparaisons demandent
+beaucoup d'attention lors du début de votre
+apprentissage, ils seront une cause d'erreur frequente.  <-* FLORILEGE DES ERREURS COURRANTES
+Tout d'abord le signe == que vous risquez d'intervertir
+avec un simple signe =, tout simplement car ce symbole
+est associé dans votre esprit à l'équalité mathématique.
+Au bout d'un temps, vous serez habitué à ce que = représente
+une assignation de valeur et que == représente une égalité.
+Les langages de programmations couramment utilisés (tel que Python)
+sont souvent très ancien et sont porteurs d'archaïsmes
+difficilement justifiable dans leur syntaxe.
+Et pour ce qui est des langages plus récents ils sont souvent
+marqué par un héritage, les programmeurs étant habitués à écrire
+= pour l'assignation et == pour l'égalité, bien qu'il serait
+plus logique d'écrire <- pour l'assignation et = pour l'égalité,
+c'est un pas que peu de nouveaux langages osent franchir.
+
+Exercices:
+
+    ex_08.py:
+        Réecrivez mot pour mot la dernière version que nous venons
+        de voir, puis, changez les opérateurs de comparaison au
+        niveau des conditions tout en optenant le même résultat
+        lors de l'éxécution du logiciel.
+
+Indices:
+
+    ex_08.py:
+        Une suite d'embranchements conditionnels peut toujours être
+        écrite de différentes façon. Profitez des différents opérateurs
+        de comparaison et de l'ordre des embranchements pour gardez
+        le même comportement, tout en modifiant le code.
+        Admettons ce scénario:
+            if variable > 10:
+                print "Supérieur à 10."
+            else
+                print "Inférieur ou égal à 10."
+
+        Il peut également s'écrire:
+            if variable <= 10:
+                print "Inférieur ou égal à 10."
+            else:
+                print "Supérieur à 10."
+
+
+Corrections:
+
+    ex_08.py:
 
 // Toute cette section doit être envoyé dans le seances sur les
 // fonctions et  .isdigit() doit être remplacé par une autre fonction
@@ -1211,14 +1269,6 @@ et des contres est un des plus grand challenge du programmeur.
 //         print "Vous êtes majeur partout dans le monde."
 // else:
 //     print "Vous devez entrer un nombre entier."
-
-Exercices:
-
-// Exercice sur des comparaisons différentes.
-
-Indices:
-
-Corrections:
 
 	-- ANNEXES --
 
