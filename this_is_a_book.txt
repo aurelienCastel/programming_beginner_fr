@@ -341,13 +341,13 @@ Python installé, vous allez maintenant créer votre premier programme:
 		a ce dossier sous ce nom) en tapant mkdir programmation_debutant.
 		Vous mettrez dans ce dossier tout les exercices réalisez via ce livre.
 	3 - Ouvrez un fichier en tapant:
-			(Si votre système d'exploitation est MacOs) textedit ex_00.py
-			(Si votre système d'exploitation est Windows) notepad ex_00.py
-			(Si votre système d'exploitation est Linux) kate ex_00.py
+			(Si votre système d'exploitation est MacOs) textedit ex_000.py
+			(Si votre système d'exploitation est Windows) notepad ex_000.py
+			(Si votre système d'exploitation est Linux) kate ex_000.py
 				# Si vous n'arrivez pas à ouvrir le fichier avec cette commande
 				  cherchez sur internez quel est l'éditeur de texte par defaut
 				  de votre système d'exploitation.
-		textedit/notepad/kate est le logiciel que vous utilisez pour ouvrir un nouveau fichier nommé ex_00.py.
+		textedit/notepad/kate est le logiciel que vous utilisez pour ouvrir un nouveau fichier nommé ex_000.py.
 		Ce fichier n'existe pas encore, il va être crée à votre demande et sera enregistré sur
 		le disque dur de votre ordinateur au moment ou vous l'enregistrerez.
 	4 - Ecrivez exactement les lignes suivantes dans votre éditeur de texte,
@@ -362,7 +362,7 @@ Python installé, vous allez maintenant créer votre premier programme:
 		parfois vous contenter de copier des fragment de code sans en saisir le sens.
 		Sauvegardez (en appuyant en même temps sur les touches Ctrl/Cmd et s).
 	5 - Entrez la commande suivante dans le terminal de commandes:
-                python ex_00.py
+                python ex_000.py
 		python suivi d'un nom de fichier avec l'extension .py
 		indique que vous souhaitez traduire le contenu textuel d'un fichier
 		écrit dans le langage Python en programme et le lancer.
@@ -464,10 +464,10 @@ expliquerez leur concept sous-jacent plus tard.
 
 Ouvrez votre terminal, et rendez-vous à l'emplacement dédié à vos exercices.
 (Normalement home/programmation_debutant)
-Creez et ouvrez le fichier ex_01.py en tapant:
-    (Si votre système d'exploitation est MacOs) textedit ex_01.py
-    (Si votre système d'exploitation est Windows) notepad ex_01.py
-    (Si votre système d'exploitation est Linux) kate ex_01.py
+Creez et ouvrez le fichier ex_001.py en tapant:
+    (Si votre système d'exploitation est MacOs) textedit ex_001.py
+    (Si votre système d'exploitation est Windows) notepad ex_001.py
+    (Si votre système d'exploitation est Linux) kate ex_001.py
 Ecrivez exactement les lignes suivantes dans votre éditeur de texte,
 écrivez chaque caractéres au clavier, pas de copier-coller:
     #!/usr/bin/env python
@@ -482,7 +482,7 @@ Ecrivez exactement les lignes suivantes dans votre éditeur de texte,
     print message
      
 Sauvegardez le fichier, puis, dans le terminal de commandes entrez:
-    python ex_01.py
+    python ex_001.py
 Si votre programme est correctement éxécuté, les lignes suivantes
 s'afficherons dans votre terminal:
     Mozart a écrit 41 symphonies.
@@ -665,7 +665,7 @@ Relisez l'analyse ligne à ligne une seconde fois si nécaissaire mais pas plus.
 C'est en codant qu'on devient coderon, vous assimilerez les différents
 concepts au fil du temps et des exercices.
 
-Le programme précédent, python ex_01.py, pourrait être écrit de différentes
+Le programme précédent, python ex_001.py, pourrait être écrit de différentes
 façon et aboutir au même résultat.
 Par exemple comme ceci, en remplaçant les variables par des valeurs litérales:
 
@@ -725,13 +725,13 @@ Exercices:
     autrement vous ne pourrez pas executer vos programmes.
     Vous pouvez tester/executer vos programme en tapant python nom_du_fichier.
 
-    ex_02.py:
+    ex_002.py:
         Ecrivez un programme qui affiche les lignes suivantes dans le
         terminal de commandes:
             Bonjour je m'appelle Miguel Sanchez.
             La racine carée de 9 est 3.
             99.99 pourcent des gens aiment le chocolat.
-    ex_03.py:
+    ex_003.py:
         Si vous n'aviez pas utilisé de variables dans l'exercice
         précédent, extrayez:
         "Miguel Sanchez" de la première phrase
@@ -740,11 +740,11 @@ Exercices:
         et associez ses valeurs à des variables.
         Vous devez aboutir au même résultat que dans l'exercice précédent.
 
-    ex_04.py:
+    ex_004.py:
         Déclarez trois variables differentes contenant chacune la valeur
         13, une pour chaque type possible (entier, nombre à virgule, chaine de charactère).
 
-    ex_05.py:
+    ex_005.py:
         Ce programme vous est founit:
             #!/usr/bin/env python
             # -*- coding: utf-8 -*-
@@ -759,7 +759,7 @@ Exercices:
         Ajoutez une variable contenant le nom du second pays le plus peuplé du monde.
         Affichez ces valeurs à l'écran en vous inspirant des print déjà présents.
 
-    ex_06.py:
+    ex_006.py:
         Depuis le dernier exercice la démographie des pays à changé et l'Inde
         est désormais plus peuplé que la Chine.
         A partir du programme précédent, et sans modifier les lignes déjà
@@ -768,11 +768,11 @@ Exercices:
 
 Indices:
 
-    ex_02.py:
+    ex_002.py:
         Vous lancez votre programme et obtenez ce message:
 
-        File "ex_02.py", line 3
-            SyntaxError: Non-ASCII character '\xc3' in file ex_02.py on line 3,
+        File "ex_002.py", line 3
+            SyntaxError: Non-ASCII character '\xc3' in file ex_002.py on line 3,
             but no encoding declared; see http://python.org/dev/peps/pep-0263/
             for details
 
@@ -782,14 +782,14 @@ Indices:
 
         Vous lancez votre programme et obtenez ce message:
 
-        File "ex_02.py", line 4 
+        File "ex_002.py", line 4 
             print Bonjour je m'appelle Miguel Sanchez.
                            ^
         SyntaxError: invalid syntax    
 
         Ou celui-ci:
 
-        File "ex_02.py", line 4 
+        File "ex_002.py", line 4 
             print "Bonjour je m'appelle Miguel Sanchez.
                                                       ^
         SyntaxError: EOL while scanning string literal    
@@ -798,14 +798,14 @@ Indices:
         est indiqué entre guillemets, n'oubliez ni de les ouvrir, ni
         de les fermer.
 
-    ex_03.py:
+    ex_003.py:
         Vous pouvez utiliser le symbole + plutot que , pour coller
         des variables dans les chaines de caractères sans ajout
         d'espaces, de cette façon vous pouvez éviter l'espace avant
         le point de fin de phrase dans:
             print "Bonjour je m'appelle " + name + "."
 
-    ex_06.py:
+    ex_006.py:
         Cet exercice un peu tordu peut se resoudre de deux
         façon, soit, en écrasant les valeurs des variables
         , soit, en les interchangeant.
@@ -820,7 +820,7 @@ Corrections:
     (sauts de ligne, espaces, noms des variables), et inspirez vous
     en, il est probablement plus clair que le votre. ~
 
-    ex_02.py:
+    ex_002.py:
         #!/usr/bin/env python
         # -*- coding: utf-8 -*-
 
@@ -828,7 +828,7 @@ Corrections:
         print "La racine carée de 9 est 3."
         print "99.99 pourcent des gens aiment le chocolat."
 
-    ex_03.py:
+    ex_003.py:
         #!/usr/bin/env python
         # -*- coding: utf-8 -*-
 
@@ -841,7 +841,7 @@ Corrections:
         print "La racine carée de " + starting_number + " est " + result + "."
         print pourcent + " pourcent des gens aiment le chocolat."
 
-    ex_04.py:
+    ex_004.py:
         #!usr/bin/env python
         # -*- coding: utf-8 -*-
         
@@ -849,7 +849,7 @@ Corrections:
         floating = 13.0
         string = "13"
 
-    ex_05.py:
+    ex_005.py:
         #!/usr/bin/env python
         # -*- coding: utf-8 -*-
         
@@ -863,7 +863,7 @@ Corrections:
         print "Le pays le plus peuplé du monde est", most_populated_country + "."
         print "Le deuxième pays le plus peuplé du monde est", second_most_populated_country + "."
 
-    ex_06.py:
+    ex_006.py:
 
         En premier lieu, analysons la technique qui consiste
         à écraser les variables avec des nouvelles valeurs.
@@ -1004,7 +1004,7 @@ On aura donc enfin la trinité du logiciel au complet:
     - Affiche des données, persiste, ou trasfère des données vers l'extérieur.
 
 Ouvrez votre terminal, et rendez-vous à l'emplacement dédié à vos exercices.
-Creez et ouvrez le fichier ex_07.py:
+Creez et ouvrez le fichier ex_007.py:
 Ecrivez exactement les lignes suivantes dans votre éditeur de texte,
 écrivez chaque caractéres au clavier, pas de copier-coller:
 
@@ -1038,7 +1038,7 @@ ou
 
 Au quel cas le programme crash, il s'arrete brutalement avec l'erreur suivante:
     Traceback (most recent call last):
-      File "ex_07.py", line 5, in <module>
+      File "ex_007.py", line 5, in <module>
         converted_user_input = int(user_input)
     ValueError: invalid literal for int() with base 10: 'trente'
 
@@ -1120,6 +1120,16 @@ sur les lignes fonctionnelles du programme.
              par la présence d'un certain nombre d'espace au début de la ligne.
              Quatre exactement. Cette indentation permet de marquer l'imbriquement
              logique des embrenchements.
+
+                  File "ex_007.py", line 8
+                    message = "Vous êtes mineur dans la plupart des pays."
+                           ^
+                IndentationError: expected an indented block
+             Losque vous verrez cette erreur revérifiez votre code pour faire en
+             sorte que chaque ligne à l'intérieur d'un embranchement
+             (désigné par block dans le message d'erreur) soit bien indenté
+             de quatre espaces.
+
              Toute la syntaxe reste très proche de l'écriture de n'importe
              quel texte mis en forme.
              Si on emet une hypothèses:
@@ -1218,17 +1228,51 @@ c'est un pas que peu de nouveaux langages osent franchir.
 
 Exercices:
 
-    ex_08.py:
+    ex_008.py:
         Réecrivez mot pour mot la dernière version que nous venons
         de voir, puis, changez les opérateurs de comparaison au
         niveau des conditions tout en optenant le même résultat
         lors de l'éxécution du logiciel.
 
+    ex_009.py:
+        Ecrivez un programme qui demande la saisie du nom d'un jour de la
+        semaine et qui en retour affiche la position de ce jour.
+        Par exemple:
+        l'utilisateur entre
+            lundi
+        et vous affichez
+            lundi est le premier jour de la semaine.
+        Gérez également le cas ou l'utilisateur saisi du texte qui
+        ne représente pas un jour de la semaine.
+        Néanmoins, inutile de gérer la capitalisation des mots,
+        seuls les mots entièrement en minuscules sont valide.
+
+    ex_010.py:
+        Ecrivez un programme qui demande la saisie d'une lettre de l'alphabet.
+        Le programme affiche alors un message qui indique quelle lettre vient d'être
+        entré, ensuite une autre lettre est demandé, elle est également affiché par
+        un message, enfin un dernier message indique si la deuxième lettre est
+        plus proche du début de l'alphabet que la première, moins proche ou si c'est la même lettre.
+        Ne vous sousiez pas des cas qui provoquent une erreur ou un comportement étrange,
+        n'éssayé votre logiciel qu'avec une lettre de l'alphabet en minuscule à chaque saisie.
+        Scénario type:
+            Entrez une lettre de l'alphabet: a
+            Vous avez entré la lettre a.
+            Entrez une lettre de l'alphabet: d
+            Vous avez entré la lettre d.
+            La deuxième lettre est plus proche de la fin de l'alphabet que la première.
+
+    ex_011.py:
+        Récupérez le code de l'éxercice précédent et modifiez le de sorte que,
+        la saisie de la deuxième lettre n'est demandé que si la première ce situe
+        vers le millieu de l'alphabet (entre h et p).
+
+
 Indices:
 
-    ex_08.py:
-        Une suite d'embranchements conditionnels peut toujours être
-        écrite de différentes façon. Profitez des différents opérateurs
+    ex_008.py:
+        Une suite d'embranchements conditionnels peut toujours
+        s'écrire de différentes façon. Profitez des différents opérateurs
         de comparaison et de l'ordre des embranchements pour gardez
         le même comportement, tout en modifiant le code.
         Admettons ce scénario:
@@ -1243,10 +1287,113 @@ Indices:
             else:
                 print "Supérieur à 10."
 
+    ex_009.py:
+        N'hésitez pas à vous inspirer de l'éxercice précédent pour
+        répondre à celui-ci, par contre réfléchisez bien aux éléments
+        qu'il est judicieu de garder, d'enlever, ou de modifier.
+        Ne tapez pas un seul mot sans comprendre son role dans le code,
+        si besoin retrouvez sa définition dans le cour.
+        Gardez aussi en tête que les opérateurs de comparaisons ne s'appliquent
+        pas qu'aux nombres mais à de nombreux types de données, les
+        chaines de caractères entre autres.
+
+    ex_010.py:
+        Les opérateurs de comparaison peuvent avoir des comportements étranges,
+        parfois frustrant mais parfois arrangeant, ils peuvent par exemple
+        comparer des chaines de caractères pour les classer selon l'ordre alphabétique.
+        a < b, aziz > albert, { > #, ect...
+
+    ex_011.py:
+        Pour résoudre cet exercice vous allez devoir imbriquer des conditions,
+        pratique périlleuse au début de l'apprentissage, n'aillez pas peur de vous
+        tromper.
+        // Insérer l'erreur sur l'indentation
+
 
 Corrections:
 
-    ex_08.py:
+    ex_008.py:
+
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        user_input = raw_input("Entrez votre age:")
+        
+        if int(user_input) >= 21:
+            print "Vous êtes majeur partout dans le monde."
+        elif int(user_input) >= 18:
+            print "Vous êtes majeur dans la plupart des pays."
+        else:
+            print "Vous êtes mineur dans la plupart des pays."
+
+    ex_009.py:
+
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        user_input = raw_input("Entrez le nom d'un jour de la semaine (en minuscules): ")
+        
+        if user_input == "lundi":
+            print "lundi est le premier jour de la semaine"
+        elif user_input == "mardi":
+            print "mardi est le deuxième jour de la semaine"
+        elif user_input == "mercredi":
+            print "mercredi est le troisième jour de la semaine"
+        elif user_input == "jeudi":
+            print "jeudi est le quatrième jour de la semaine"
+        elif user_input == "vendredi":
+            print "vendredi est le cinquième jour de la semaine"
+        elif user_input == "samedi":
+            print "samedi est le sixième jour de la semaine"
+        elif user_input == "dimanche":
+            print "dimanche est le septième jour de la semaine"
+        else:
+            print "Veuillez saisir un jour de la semaine, en minuscules."
+
+        Cet exercice permet différents designs pour modifier les éléments répétés.
+        Celui que je vous présente permet de réduire l'apparition de l'instruction
+        print à une seule.
+        Ici c'est sans importance mais dans des programmes plus élaborés, réduire
+        les effets de bords d'un programme est une très bonne chose.
+        Notez aussi la composition des chaines de caractères pour construire
+        le message en utilisant le plus de variables possible.
+        Relocaliser les chaines de caractères qui se répétent dans des variables
+        rend le programme plus facile à modifier pour l'avenir et réduit
+        la probabilité de faute de frappe.
+
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        user_input = raw_input("Entrez le nom d'un jour de la semaine (en minuscules): ")
+        message_middle = " est le "
+        message_end = " jour de la semaine."
+        
+        if user_input == "lundi":
+            message = user_input + message_middle + " premier " + message_end
+        elif user_input == "mardi":
+            message = user_input + message_middle + "dexième" + message_end
+        elif user_input == "mercredi":
+            message = user_input + message_middle + "troisième" + message_end
+        elif user_input == "jeudi":
+            message = user_input + message_middle + "quatrième" + message_end
+        elif user_input == "vendredi":
+            message = user_input + message_middle + "cinquième" + message_end
+        elif user_input == "samedi":
+            message = user_input + message_middle + "sixième" + message_end
+        elif user_input == "dimanche":
+            message = user_input + message_middle + "septième" + message_end
+        else:
+            message = "Veuillez saisir un jour de la semaine, en minuscules."
+        
+        print message
+
+    ex_010.py:
+
+// Pour les question de fin de chapitre mettre une question sur comment sortir
+// de l'éxécution d'un programme.
+        
+
+        SEANCE N°3: - OPÉRATEURS LOGIQUES, ASSOCIATION DE CONDITION -
 
 // Toute cette section doit être envoyé dans le seances sur les
 // fonctions et  .isdigit() doit être remplacé par une autre fonction
