@@ -1265,7 +1265,19 @@ Exercices:
     ex_011.py:
         Récupérez le code de l'éxercice précédent et modifiez le de sorte que,
         la saisie de la deuxième lettre n'est demandé que si la première ce situe
-        vers le millieu de l'alphabet (entre h et p).
+        vers le millieu de l'alphabet (entre h et p, tous deux inclus).
+        La comparaison des deux lettres ne doit bien sur pas advenir si la deuxième lettre
+        n'est jamais entrée.
+
+    ex_012.py:
+        Ecrivez un programme qui demande la saisie de trois nombres.
+        Demandes ensuite à l'utilisateur d'entrée "croissant" ou "décroissant".
+        Affichez les nombres entrés précédement soit dans un ordre croissant,
+        soit décroissant, suivant la saisie de l'utilisateur.
+        Inutile de gérer les mauvaises saisies, partez du principe que l'utilisateur
+        va toujours saisir des données comformes.
+        
+        
 
 
 Indices:
@@ -1307,8 +1319,37 @@ Indices:
         Pour résoudre cet exercice vous allez devoir imbriquer des conditions,
         pratique périlleuse au début de l'apprentissage, n'aillez pas peur de vous
         tromper.
-        // Insérer l'erreur sur l'indentation
+        Vous pouvez également vous aider avec un dessin, un schema, ou quoi
+        que ce soit qui vous permette d'éxprimer les embranchements logiques du programme
+        sans passer par du code.
+        Si vous avez du mal à penser directement le comportement du logiciel de façon
+        parallèle, résumez le plus possible la suite des avénements de façon logique,
+        puis embriquez les instructions les unes à la suite des autres jusqu'à obtenir
+        quelque chose qui vous semble cohérant.
 
+        Si la lettre entrée est situé à h ou plus loin, ET si la lettre entrée est situé
+        à p ou moins loin, ALORS on demande la saisie d'une deuxième lettre.
+
+        - Si la lettre entrée est situé à h ou plus loin 
+            - Si la lettre entrée est situé à p ou moins loin 
+                - on demande la saisie d'une deuxième lettre
+
+        Notez comme le mot ET engendre une condition imbriqué dans une autre condition
+        et le mot ALORS exprime un événement, une action imbriqué dans une condition.
+
+        Et souvenez vous, le meilleur moyen de s'assurer du bon fonctionnement de son
+        logiciel est de l'éxécuter et de l'essayer.
+
+        Les imbriquation d'embranchements causent souvent des erreurs d'indentations.
+        Dés que vous voyez cette erreur, vérifiez vos indentations, la ligne est indiquez dans
+        le message, la tache de correction des indentations est fastidieuse alors corrigez en une
+        à la fois et relancez l'éxécution du programme, jusqu'à ce qu'il n'en reste aucune.
+              File "ex_007.py", line 8
+                message = "Vous êtes mineur dans la plupart des pays."
+                       ^
+            IndentationError: expected an indented block
+
+    ex_012.py:
 
 Corrections:
 
@@ -1388,12 +1429,51 @@ Corrections:
         print message
 
     ex_010.py:
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        first_input = raw_input("Entrez une lettre de l'alphabet: ")
+        print "Vous avez entré la lettre " + first_input + "."
+        
+        second_input = raw_input("Entrez une lettre de l'alphabet: ")
+        print "Vous avez entré la lettre " + second_input + "."
+        
+        if first_input > second_input:
+            print "La première lettre est plus proche de la fin de l'alphabet."
+        elif first_input < second_input:
+            print "La deuxième lettre est plus proche de la fin de l'alphabet."
+        else:
+            print "Les deux lettres sont identiques."
+
+    ex_011.py:
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        first_input = raw_input("Entrez une lettre de l'alphabet: ")
+        print "Vous avez entré la lettre " + first_input + "."
+        
+        if first_input >= "h":
+            if first_input <= "p":
+                second_input = raw_input("Entrez une lettre de l'alphabet: ")
+                print "Vous avez entré la lettre " + second_input + "."
+        
+                if first_input > second_input:
+                    print "La première lettre est plus proche de la fin de l'alphabet."
+                elif first_input < second_input:
+                    print "La deuxième lettre est plus proche de la fin de l'alphabet."
+                else:
+                    print "Les deux lettres sont identiques."
+
 
 // Pour les question de fin de chapitre mettre une question sur comment sortir
 // de l'éxécution d'un programme.
         
 
         SEANCE N°3: - OPÉRATEURS LOGIQUES, ASSOCIATION DE CONDITION -
+
+        SEANCE N°4: - OPÉRATEURS MATHÉMATIQUES, INSTRUCTIONS RÉPÉTÉES -
+
+        SEANCE N°5: - DÉFINIR DES FONCTIONS -
 
 // Toute cette section doit être envoyé dans le seances sur les
 // fonctions et  .isdigit() doit être remplacé par une autre fonction
