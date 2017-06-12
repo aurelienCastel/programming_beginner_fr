@@ -1271,12 +1271,19 @@ Exercices:
 
     ex_012.py:
         Ecrivez un programme qui demande la saisie de trois nombres.
-        Demandes ensuite à l'utilisateur d'entrée "croissant" ou "décroissant".
+        Demandes ensuite à l'utilisateur d'entrer "croissant" ou "décroissant".
         Affichez les nombres entrés précédement soit dans un ordre croissant,
         soit décroissant, suivant la saisie de l'utilisateur.
         Inutile de gérer les mauvaises saisies, partez du principe que l'utilisateur
         va toujours saisir des données comformes.
         
+    ex_013.py:
+        Ecrivez un programme qui demande à l'utilisateur d'entrer "croissant" ou "décroissant".
+        Si il choisi "croissant", alors il devra saisir des nombres de plus en plus grand,
+        si il entre un nombre qui n'est pas plus grand que le précédent, le programme s'achève
+        avec un message d'échec. Si il arrive à entrer 3 nombres croissant, le programme se
+        termine avec un message de succès.
+        Si "décroissant" est choisi, la même chose, mais dans un ordre décroissant.
         
 
 
@@ -1350,6 +1357,13 @@ Indices:
             IndentationError: expected an indented block
 
     ex_012.py:
+        Les conseils s'appliquant à cet exercice sont les même que ceux de l'exercice précédent.
+        De nombreuses solutions sont possible pour mettre en ordre les nombres du plus grand
+        au plus petit, en n'utilisant rien de plus que les if / elif / else, les opérateurs
+        de comparaison, et les assignations de variables.
+        Vous disposez de trois données de départ qui sont les nombres entrés par l'utilisateur,
+        les trois données d'arrivé que vous recherchez sont: le plus petit nombre, le plus grand,
+        et celui du millieu.
 
 Corrections:
 
@@ -1463,6 +1477,126 @@ Corrections:
                     print "La deuxième lettre est plus proche de la fin de l'alphabet."
                 else:
                     print "Les deux lettres sont identiques."
+
+    ex_012.py:
+
+        Cet exercice permet un grand nombre de solution, notamment
+        dans le traitement de l'ordonnacement des trois nombres.
+        Cettte première version à les avantages d'être courte
+        et de ne posséder aucune condition imbriqué, la rendant
+        plus facile à comprendre et à modifier.
+
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        first_input = int(raw_input("Entrez un nombre: "))
+        second_input = int(raw_input("Entrez un nombre: "))
+        third_input = int(raw_input("Entrez un nombre: "))
+        
+        order_input = raw_input("Entrez 'croissant' ou 'décroissant' pour afficher les nombres dans l'ordre voulu: ")
+        
+        if first_input > second_input:
+            highest_number = first_input
+            lowest_number = second_input
+        else:
+            highest_number = second_input
+            lowest_number = first_input
+        
+        if third_input > highest_number:
+            medium_number = highest_number
+            highest_number = third_input
+        elif third_input > lowest_number:
+            medium_number = third_input
+        else:
+            medium_number = lowest_number
+            lowest_number = third_input
+        
+        if order_input == "croissant":
+            print lowest_number, "<", medium_number, "<", highest_number
+        else:
+            print highest_number, ">", medium_number, ">", lowest_number
+
+        Cette seconde version fait usage de conditions imbriquées,
+        certais if contiennent d'autres if.
+        Elle est également plus longue de 3 lignes.
+
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        first_input = int(raw_input("Entrez un nombre: "))
+        second_input = int(raw_input("Entrez un nombre: "))
+        third_input = int(raw_input("Entrez un nombre: "))
+        
+        order_input = raw_input("Entrez 'croissant' ou 'décroissant' pour afficher les nombres dans l'ordre voulu: ")
+        
+        if first_input > second_input:
+            if first_input > third_input:
+                highest_number = first_input
+                if second_input > third_input:
+                    medium_number = second_input
+                    lowest_number = third_input
+                else:
+                    medium_number = third_input
+                    lowest_number = second_number
+            else:
+                medium_number = first_input
+                highest_number = third_input
+                lowest_number = second_input
+        else:
+            if first_input > third_input:
+                medium_number = first_input
+                highest_number = second_input
+                lowest_number = third_input
+        
+        if order_input == "croissant":
+            print lowest_number, "<", medium_number, "<", highest_number
+        else:
+            print highest_number, ">", medium_number, ">", lowest_number
+
+        La troisième solution est certainement la plus naive,
+        (admirez la répétition sistématique des variables)
+        elle en est très facile à comprendre mais abusivement longue.
+
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        first_input = int(raw_input("Entrez un nombre: "))
+        second_input = int(raw_input("Entrez un nombre: "))
+        third_input = int(raw_input("Entrez un nombre: "))
+        
+        order_input = raw_input("Entrez 'croissant' ou 'décroissant' pour afficher les nombres dans l'ordre voulu: ")
+        
+        if first_input > second_input:
+            if third_input > first_input:
+                highest_number = third_input
+                medium_number = first_input
+                lowest_number = second_input
+            elif third_input > second_input:
+                highest_number = first_input
+                medium_number = third_input
+                lowest_number = second_input
+            else:
+                highest_number = first_input
+                medium_number = second_input
+                lowest_number = third_input
+        else:
+            if third_input > second_input:
+                highest_number = third_input
+                medium_number = second_input
+                lowest_number = first_input
+            elif third_input > first_input:
+                highest_number = second_input
+                medium_number = third_input
+                lowest_number = first_input
+            else:
+                highest_number = second_input
+                medium_number = first_input
+                lowest_number = third_input
+
+        if order_input == "croissant":
+            print lowest_number, "<", medium_number, "<", highest_number
+        else:
+            print highest_number, ">", medium_number, ">", lowest_number
 
 
 // Pour les question de fin de chapitre mettre une question sur comment sortir
