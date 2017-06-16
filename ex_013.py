@@ -1,29 +1,30 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-first_input = int(raw_input("Entrez un nombre: "))
-second_input = int(raw_input("Entrez un nombre: "))
-third_input = int(raw_input("Entrez un nombre: "))
-
 order_input = raw_input("Entrez 'croissant' ou 'décroissant' pour afficher les nombres dans l'ordre voulu: ")
 
-if first_input > second_input:
-    highest_number = first_input
-    lowest_number = second_input
-else:
-    highest_number = second_input
-    lowest_number = first_input
-
-if third_input > highest_number:
-    medium_number = highest_number
-    highest_number = third_input
-elif third_input > lowest_number:
-    medium_number = third_input
-else:
-    medium_number = lowest_number
-    lowest_number = third_input
-
 if order_input == "croissant":
-    print lowest_number, "<", medium_number, "<", highest_number
+    first_input = int(raw_input("Entrez un nombre: "))
+    second_input = int(raw_input("Entrez un nombre (plus grand que le précédent): "))
+    if second_input > first_input:
+        third_input = int(raw_input("Entrez un nombre (plus grand que le précédent): "))
+        if third_input > second_input:
+            print "Félicitation vous avez entré trois nombres croissants."
+        else:
+            print "Vous devez entrer des nombres dans un ordre croissant."
+    else:
+        print "Vous devez entrer des nombres dans un ordre croissant."
+
+elif order_input == "décroissant":
+    first_input = int(raw_input("Entrez un nombre: "))
+    second_input = int(raw_input("Entrez un nombre (plus petit que le précédent): "))
+    if second_input < first_input:
+        third_input = int(raw_input("Entrez un nombre (plus petit que le précédent): "))
+        if third_input < second_input:
+            print "Félicitation vous avez entré trois nombres décroissants."
+        else:
+            print "Vous devez entrer des nombres dans un ordre décroissant."
+    else:
+        print "Vous devez entrer des nombres dans un ordre décroissant."
 else:
-    print highest_number, ">", medium_number, ">", lowest_number
+    print "Veuillez choisir 'croissant' ou 'décroissant'."

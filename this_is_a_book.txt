@@ -1284,8 +1284,6 @@ Exercices:
         avec un message d'échec. Si il arrive à entrer 3 nombres croissant, le programme se
         termine avec un message de succès.
         Si "décroissant" est choisi, la même chose, mais dans un ordre décroissant.
-        
-
 
 Indices:
 
@@ -1364,6 +1362,20 @@ Indices:
         Vous disposez de trois données de départ qui sont les nombres entrés par l'utilisateur,
         les trois données d'arrivé que vous recherchez sont: le plus petit nombre, le plus grand,
         et celui du millieu.
+
+    ex_013.py:
+        Vous ne pourrez pas échapper aux conditions imbriquées dans cet exercice.
+        La partie principale de votre programme ressemblera à  ceci:
+            if [...] :
+                if [...] :
+                    [...]
+                else:
+                    [...]
+            else [...] :
+                if [...] :
+                    [...]
+                else:
+                    [...]
 
 Corrections:
 
@@ -1597,6 +1609,39 @@ Corrections:
             print lowest_number, "<", medium_number, "<", highest_number
         else:
             print highest_number, ">", medium_number, ">", lowest_number
+
+    ex_013.py:
+
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        order_input = raw_input("Entrez 'croissant' ou 'décroissant' pour afficher les nombres dans l'ordre voulu: ")
+        
+        if order_input == "croissant":
+            first_input = int(raw_input("Entrez un nombre: "))
+            second_input = int(raw_input("Entrez un nombre (plus grand que le précédent): "))
+            if second_input > first_input:
+                third_input = int(raw_input("Entrez un nombre (plus grand que le précédent): "))
+                if third_input > second_input:
+                    print "Félicitation vous avez entré trois nombres croissants."
+                else:
+                    print "Vous devez entrer des nombres dans un ordre croissant."
+            else:
+                print "Vous devez entrer des nombres dans un ordre croissant."
+        
+        else if order_input == "décroissant":
+            first_input = int(raw_input("Entrez un nombre: "))
+            second_input = int(raw_input("Entrez un nombre (plus petit que le précédent): "))
+            if second_input < first_input:
+                third_input = int(raw_input("Entrez un nombre (plus petit que le précédent): "))
+                if third_input < second_input:
+                    print "Félicitation vous avez entré trois nombres décroissants."
+                else:
+                    print "Vous devez entrer des nombres dans un ordre décroissant."
+            else:
+                print "Vous devez entrer des nombres dans un ordre décroissant."
+        else:
+            print "Veuillez choisir 'croissant' ou 'décroissant'."
 
 
 // Pour les question de fin de chapitre mettre une question sur comment sortir
