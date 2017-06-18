@@ -1203,7 +1203,7 @@ et des contres est un des plus grand challenge du programmeur.
 Avant de passer à une série d'exercice, concluons ce chapitre
 par un point sur les opérateurs de comparaisons.
 Les différents opérateurs de comparaison sont:
-    == (égal à)
+    == (identique à)
     != (différent de)
     >  (supéieur à)
     <  (inférieur à)
@@ -1665,7 +1665,7 @@ parmis trois:
             print "Le premier nombre est forcement le plus grand des trois."
 
 Vous aves également pu appréhender les opérateurs de comparaison:
-    == (égal à)
+    == (identique à)
     != (différent de)
     >  (supéieur à)
     <  (inférieur à)
@@ -1709,9 +1709,128 @@ Quelques exemples en vrac de comparaisons et d'associations:
 Comme vous pouvez le constater, la quantité de combinaison possible entre les opérateurs
 de comparaisons et les opérateurs logiques peut aboutir à des expressions troublantes,
 parfois même indécrytables.
+Dans la plupart des cas l'ordre d'application des opérateurs
+suit le sens de lecture, de gauche à droite.
+Néamoins, certains opérateurs sont prioritaires.
+Les opérateurs mathématiques:
+	priorité supérieure:
+		** (puissance)
 
-// Prédécedance des opérateurs
-// Utilisation des parenthèses
+	priorité medium:
+		* (multiplacation)
+		∕ (division)
+		∕/ (division entière)
+		% (reste de la division entière, appelé aussi modulo)
+
+	priorité basse:
+		+ (addition)
+		- (soustraction)
+
+les opérateurs de comparaison:
+	priorité très basse:
+		< (inférieur)
+		> (supérieur)
+		<= (inférieur ou égal)
+		>= (supérieur ou égal)
+		== (identique à)
+		!= (différent de)
+
+les opérateurs logiques:
+	priorité la plus basse:
+		and (et)
+		or (ou)
+
+Retenez que, les opérations mathématiques s'effectuent en premier,
+puis les comparaison, puis les opérations logiques.
+Retraçons étape par étape la réduction de cette expression 5 + 4 >= 9 and 10 == 5 + 5:
+	étape 1, opérations mathématiques:
+		5 + 4 >= 9 and 10 == 5 + 5
+		9     >= 9 and 10 == 10
+	étape 2, comparaisons:
+		9 >= 9 and 10 == 10
+		True   and True
+	étape 3, opérations logiques:
+		True and True
+			True
+
+Ne vous laissez pas troubler par la présence des True,
+ce mot clé représente quelque chose de vrai, d'éxact.
+Nous verons plus tard dans quel cas il s'avère utile, ainsi que
+son opposé False.
+Sachez que toute expression comprenant au moins un comparateur
+et/ou un opérateur logique, ce reduit fatalement soit à True, soit
+à False.
+		
+Parfois l'ordre naturel des opérateur peut ne pas convenir
+à vos besoin.
+Si vous voulez optenir 30 vous pouvez écrire (2 + 1) * 10,
+mais pas 2 + 1 * 10, qui donne 21 à cause de la priorité de
+la multiplication.
+En dehors des opérations mathématiques, les situations de ce type
+arrivent plutot avec les opérateurs logiques or et and.
+and étant prioritaire sur or.
+
+Dans la pratique, même en connaissant la priorité des opérateurs,
+la lecture correcte des expressions contenant des and et des or est
+ardue, cela à cause de notre habitude au langage humain, qui lui
+est ambigue.
+Admettons un programme dans lequel vous voulez qu'un
+menu s'affiche si l'option A est sélectionné ou alors
+si les options B et C sont sélectionnés toutes les deux simultanément.
+
+	Si l'option un est A, ou, si l'option un est B et l'option deux est C:
+		Afficher le menu
+
+Le langage naturel nous permet de rendre cette condition explicite par
+l'ajout d'un deuxième "si" et de virgules en cours de phrase, dans notre esprit
+il devient clair que les prérequis sont groupés de la sorte:
+	SI (l'option un est A) OU (l'option un est B ET l'option deux est C):
+
+En programmation, les limitations syntaxiques font que
+seul le premier Si sera présent et qu'aucune virgule ne permettra
+une séparation claire de la phrase.
+Regardez à quel point la phrase devient ambigue lorqu'on retire ces éléments:
+	Si l'option un est A ou l'option un est B et l'option deux est C:
+Peut etre compris ainsi:
+	SI (l'option un est A OU l'option un est B) ET (l'option deux est C):
+            Une de ces deux conditions              ET cette condition
+ou ainsi:
+	SI (l'option un est A) OU (l'option un est B ET l'option deux est C):
+            cette condition    OU une de ces deux conditions
+
+Heureusement, les programmes informatiques sont totalement déterministes,
+une ligne de code ne peut aboutir qu'à un résultat.
+La seule ambiguité réside dans la façon dont vous allez comprendre le code.
+Lisez le code suivant et essayez de déterminer à chaque fois
+si le contenu de l'embranchement conditionnel sera éxécuté.
+Pour vérifier votre prédiction, écrivez le code dans un fichier et éxécutez le.
+
+#!usr/bin/env python
+#-*- coding: utf-8 -*-
+
+first_option = "A"
+second_option = "X"
+third_option = "C"
+fourth_option = "V"
+
+if first_option == "A" or second_option == "B" and third_option == "C" or fourth_option == "D":
+    print "Menu 1 opened"
+
+if first_option == "A" and second_option == "B" and third_option == "C" or fourth_option == "D":
+    print "Menu 2 opened"
+
+if first_option == "A" and second_option == "B" or third_option == "C" and fourth_option == "D":
+    print "Menu 3 opened"
+
+
+// Revoir la partie sur les variables et valeur et ajouter True et False.
+
+// Changer le passage précédent pour qu'il soit témoigne que True et False
+// ont été vu.
+
+// Dans un prochain chapitre expliquer plus en détail True et False
+// ainsi que les problèmes qui peuvent advenir en additionant, soustrayent...
+// True ou False à d'autres valeurs.
 
         SEANCE N°4: - OPÉRATEURS MATHÉMATIQUES, INSTRUCTIONS RÉPÉTÉES -
 
@@ -1853,7 +1972,9 @@ vis à vis de ce cours mais également en dehors:
   <-* FLORILEGE DES ERREURS COURRANTES
     
     - Les copier / collé.
-    - = et ==
+    - = et ==.
+	- Les indentations.
+	- Prédécédence des opérateurs.
 
   <-* UN POINT SUR LES SITES COMMUNAUTAIRES AUTOUR DE LA PROGRAMMATION.
   <-* UN POINT SUR L'ANGLAIS
