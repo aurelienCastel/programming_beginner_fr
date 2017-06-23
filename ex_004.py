@@ -4,3 +4,4 @@
 integer = 13
 floating = 13.0
 string = "13"
+boolean = True
