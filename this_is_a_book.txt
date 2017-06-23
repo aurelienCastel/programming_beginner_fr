@@ -475,10 +475,12 @@ Ecrivez exactement les lignes suivantes dans votre éditeur de texte,
 
     mozart_symphonies_amount = 41
     light_speed_ms = 299792.458
+    is_door_opened = True
     message = "Si vous lisez ceci, le programme fonctionne."
 
     print "Mozart a écrit", mozart_symphonies_amount, "symphonies."
     print "La vitesse de la lumière (en metres/seconde) est:", light_speed_ms
+    print "La porte est-elle ouverte?", is_door_opened
     print message
      
 Sauvegardez le fichier, puis, dans le terminal de commandes entrez:
@@ -487,8 +489,9 @@ Si votre programme est correctement éxécuté, les lignes suivantes
 s'afficherons dans votre terminal:
     Mozart a écrit 41 symphonies.
     La vitesse de la lumière (en metres/seconde) est: 299792.458
+    La porte est-elle ouverte? True
     Si vous lisez ceci, le programme fonctionne.
-Si ce n'est pas le cas, assuré vous de bien avoir écrit à l'identique
+Si ce n'est pas le cas, assurez vous de bien avoir écrit à l'identique
 le contenue ci-dessus.
 Si meme en respectant scrupuleusement les étapes précedentes
 vous n'arrivez toujours pas au résultat souhaitez, rendez
@@ -525,7 +528,7 @@ Faisons le tour du programme que vous venez d'écrire, ligne par ligne:
              obligatoires, humainement, ils le sont.
                  mozart_symphonies_amount = 41
                  tau = 3.14 + 3.14
-             est simpliment meilleur que
+             est simplement meilleur que
                  mozart_symphonies_amount=41
                  tau=3.14+3.14
 
@@ -606,7 +609,42 @@ Faisons le tour du programme que vous venez d'écrire, ligne par ligne:
              Nous reviendrons plus tard sur la signification du typage implicite
              et ses implications.
 
-    ligne 6: message = "Si vous lisez ceci, le programme fonctionne."
+    ligne 6: is_door_opened = True
+             Une déclaration de variable de type Booléen.
+             Le type booléen représente quelque chose ne pouvant avoir
+             que deux valeurs différentes, la ou des millions de nombres
+             sont des entiers,
+             le booléen (souvent appelé bool ou boolean) ne peut être que deux choses:
+                 True   ou False
+                 Vrai   ou Faux
+                 1      ou 0
+                 Oui    ou Non
+                 Ouvert ou Fermé
+                 Allumé ou Eteint
+                 ...
+
+             Seul deux états sont possibles, quelque chose ou son opposé.
+             Concretement les seules valeurs possibles sont True et False.
+             C'est par l'affirmation ou la négation de ce qui vient avant
+             la valeur, soit True (vrai), soit False (faux), qu'on peut
+             exprimer n'importe que état binaire.
+                La porte est-elle ouverte? Oui
+                La porte est-elle ouverte? Vrai
+                porte_est_ouverte? Vrai
+                is_door_opened = True
+
+            En nommant un variable comme si il s'agissait d'une question
+            Il devient limpide qu'elle ne peut représenter que deux états.
+            Cela peut demander un peut d'habitude et un minimum de maitrise
+            de la langue anglaise, vou prendrez le pli au fur et à mesure.
+            Un exemple pour finir, vous ne réentendré parler des Booléen que dans
+            plusieur chapitres.
+                is_light_on = False
+                lumiere_allume? Faux
+                La lumière est-elle allumée? Faux
+                La lumière est-elle allumée? Non
+
+    ligne 7: message = "Si vous lisez ceci, le programme fonctionne."
              La déclaration de la variable message dont le type est string.
              Les valeurs entre guillements sont des chaines de caractères (string).
              Ces valeurs sont reconnus par le programme comme du texte.
@@ -617,10 +655,10 @@ Faisons le tour du programme que vous venez d'écrire, ligne par ligne:
              Les chaines de caratères feront l'objet d'un chapitre complet plus tard,
              ne vous en soucié pas trop pour l'instant.
 
-    ligne 7: Un saut de ligne, dans toute sa splendeur, admirez comme il sépare
+    ligne 8: Un saut de ligne, dans toute sa splendeur, admirez comme il sépare
              soigneusement les déclaration de variable du reste du code.
 
-    ligne 8: print "Mozart a écrit", mozart_symphonies_amount, "symphonies."
+    ligne 9: print "Mozart a écrit", mozart_symphonies_amount, "symphonies."
              Vous vous souvenez de la façon dont nous avons défini un programme
              informatique?
 
@@ -649,15 +687,23 @@ Faisons le tour du programme que vous venez d'écrire, ligne par ligne:
               le symbole plus, je vous laisse vous renseigner sur la
               différence entre les deux sur internet).
 
-    ligne 9: print "La vitesse de la lumière (en metres/seconde) est:", light_speed_ms
-             Cette instruction est très similaire à la précédente, vous remarquerez 
-             une difference, la valeur à coller au message est situé à la fin.
-             Il est possible de combiner des valeurs de variables
-             et des chaines de charactères litérales (le texte placé entre guillemet)
-             dans n'importe quel ordre. Souvenez-vous bien de placer une virgule
-             entre chaque élément.
+    ligne 10: print "La vitesse de la lumière (en metres/seconde) est:", light_speed_ms
+              Cette instruction est très similaire à la précédente, vous remarquerez 
+              une difference, la valeur à coller au message est situé à la fin.
+              Il est possible de combiner des valeurs de variables
+              et des chaines de charactères litérales (le texte placé entre guillemet)
+              dans n'importe quel ordre. Souvenez-vous bien de placer une virgule
+              entre chaque élément.
 
-    ligne 10: print message
+    ligne 11: print "La porte est-elle ouverte?", is_door_opened
+              Encore un affichage de texte dans le terminal de commande,
+              cepandant vous constaterez que cette fois, le texte affiché
+              est plutot étrange:
+                La porte est-elle ouverte? True
+              Ne vous en souviez pas, la raison vous en sera expliqué
+              dans un futur chapitre.
+
+    ligne 12: print message
               Idem, cette fois ci seul la valeur de message
               (Si vous lisez ceci, le programme fonctionne.) sera affiché.
 
@@ -742,7 +788,7 @@ Exercices:
 
     ex_004.py:
         Déclarez trois variables differentes contenant chacune la valeur
-        13, une pour chaque type possible (entier, nombre à virgule, chaine de charactère).
+        13, une pour chaque type possible (entier, nombre à virgule, booléen, chaine de charactère).
 
     ex_005.py:
         Ce programme vous est founit:
@@ -848,6 +894,7 @@ Corrections:
         integer = 13
         floating = 13.0
         string = "13"
+        boolean = True
 
     ex_005.py:
         #!/usr/bin/env python
@@ -1751,15 +1798,30 @@ Retraçons étape par étape la réduction de cette expression 5 + 4 >= 9 and 10
 		True   and True
 	étape 3, opérations logiques:
 		True and True
-			True
+                    True
 
-Ne vous laissez pas troubler par la présence des True,
-ce mot clé représente quelque chose de vrai, d'éxact.
-Nous verons plus tard dans quel cas il s'avère utile, ainsi que
-son opposé False.
-Sachez que toute expression comprenant au moins un comparateur
+Surprise, c'est le grand retour du type Booléen.
+Et oui, toute expressions comprenant au moins un comparateur
 et/ou un opérateur logique, ce reduit fatalement soit à True, soit
 à False.
+Est-ce que 9 >= 9 ? Oui, c'est vrai.
+Est-ce que 10 == 10 ? Oui, c'est vrai.
+Est-ce que True and True ? Euh...
+Une petite parenthèse s'impose.
+Lors de la reduction de l'expression vers une unique valeur, soit True
+soit False, on passes souvent par des exprésions intermédiares comme:
+    True and False
+    True or False
+    False and False
+Autour d'un and, pour obtenir le résultat True, il faut que les deux valeurs soient True.
+Autour d'un or, il faut qu'au moins une des valeur soit True.
+Dans tout les autres cas la valeur obtenue est False.
+Il n'est pas vraiment utilie que vous reteniez ça car si vous faites les choses correctement,
+le code écrit dans la condition sera compréhensible comme du langage humain.
+    if 5 + 4 >= 9 and 10 == 5 + 5:
+        [...]
+Inutile de connaitre les régles d'association des True et False pour comprendre que
+la condition est remplie.
 		
 Parfois l'ordre naturel des opérateur peut ne pas convenir
 à vos besoin.
@@ -1822,11 +1884,11 @@ if first_option == "A" and second_option == "B" and third_option == "C" or fourt
 if first_option == "A" and second_option == "B" or third_option == "C" and fourth_option == "D":
     print "Menu 3 opened"
 
+Exercices:
 
-// Revoir la partie sur les variables et valeur et ajouter True et False.
+Indices:
 
-// Changer le passage précédent pour qu'il soit témoigne que True et False
-// ont été vu.
+Corrections:
 
 // Dans un prochain chapitre expliquer plus en détail True et False
 // ainsi que les problèmes qui peuvent advenir en additionant, soustrayent...
