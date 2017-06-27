@@ -1773,7 +1773,7 @@ Les opérateurs mathématiques:
 		+ (addition)
 		- (soustraction)
 
-les opérateurs de comparaison:
+Les opérateurs de comparaison:
 	priorité très basse:
 		< (inférieur)
 		> (supérieur)
@@ -1782,7 +1782,7 @@ les opérateurs de comparaison:
 		== (identique à)
 		!= (différent de)
 
-les opérateurs logiques:
+Les opérateurs logiques:
 	priorité la plus basse:
 		and (et)
 		or (ou)
@@ -1802,7 +1802,7 @@ Retraçons étape par étape la réduction de cette expression 5 + 4 >= 9 and 10
 
 Surprise, c'est le grand retour du type Booléen.
 Et oui, toute expressions comprenant au moins un comparateur
-et/ou un opérateur logique, ce reduit fatalement soit à True, soit
+et/ou un opérateur logique, se reduit fatalement soit à True, soit
 à False.
 Est-ce que 9 >= 9 ? Oui, c'est vrai.
 Est-ce que 10 == 10 ? Oui, c'est vrai.
@@ -1823,9 +1823,9 @@ le code écrit dans la condition sera compréhensible comme du langage humain.
 Inutile de connaitre les régles d'association des True et False pour comprendre que
 la condition est remplie.
 		
-Parfois l'ordre naturel des opérateur peut ne pas convenir
+Parfois l'ordre naturel des opérateurs peut ne pas convenir
 à vos besoin.
-Si vous voulez optenir 30 vous pouvez écrire (2 + 1) * 10,
+Si vous voulez obtenir 30 vous pouvez écrire (2 + 1) * 10,
 mais pas 2 + 1 * 10, qui donne 21 à cause de la priorité de
 la multiplication.
 En dehors des opérations mathématiques, les situations de ce type
@@ -1867,7 +1867,7 @@ Lisez le code suivant et essayez de déterminer à chaque fois
 si le contenu de l'embranchement conditionnel sera éxécuté.
 Pour vérifier votre prédiction, écrivez le code dans un fichier et éxécutez le.
 
-#!usr/bin/env python
+#!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
 first_option = "A"
@@ -1885,8 +1885,33 @@ if first_option == "A" and second_option == "B" or third_option == "C" and fourt
     print "Menu 3 opened"
 
 Exercices:
+    Dans cette série d'éxércices vous devrez privilégier l'utilisation
+    des opérateurs logiques.
+    Le but est de vous entrainer à manier de nouveaux moyens.
+    Il n'est pas grave que les programmes en soient moins optimisés et lisibles.
+
+    ex_014.py:
+        Reprenez le code de l'exercice ex_012.py et changez les
+        conditions pour utiliser seulement des if, sans else, sans elif
+        et sans conditions imbriqués.
+        Vous devez obligatoirement utiliser les opérateurs logiques.
+        Vous devez aboutir au même résultat lors de l'éxécution du programme.
+
+        
+
 
 Indices:
+
+    ex_014.py:
+        En tout vous aurez besoin de six blocs conditionnel car les nombres
+        entrés par l'utilisateur peuvent être disposés de six façons.
+        A >= B >= C
+        A >= C >= B
+        B >= A >= C
+        B >= C >= A
+        C >= A >= B
+        C >= B >= A
+        Il ne vous reste plus qu'a traduire cette liste de situations possibles en conditions.
 
 Corrections:
 
